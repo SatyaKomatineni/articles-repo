@@ -1,0 +1,50 @@
+1. Help me analyze the following poem
+2. I am looking for a measure of consonance in each line
+3. In your answer for each poem, for each line I want
+	1. The line itself
+	2. In need the following at the end of that line. they are
+		1. The consonant count that repeats the most
+		2. The consonant count that repeats the second most 
+		2. The total count of all consonants on that line
+		4. The ratio of the top consonant count to the total count
+		5. The ration of (sum of the top two consonant counts) to the (total consonant count)
+	3. I want all the lines in your answer
+	4. I want the counts at the end of each line in the following form
+		line, consonant1: count, consonant2: count, total: count, ration 1, ration 2
+
+The poem is the following:
+
+Shakespeare's Sonnet I
+
+Try 2
+****************************
+
+1. Help me analyze the following poem
+2. I am looking for a measure of consonance in each line
+3. In your answer for each poem, for each line I want
+	1. The line itself
+	2. In need the following at the end of that line. they are
+		1. The consonant count that repeats the most
+		2. The consonant count that repeats the second most 
+		2. The total count of all consonants on that line
+		4. The ratio of the top consonant count to the total count
+		5. The ration of (sum of the top two consonant counts) to the (total consonant count)
+		6. Consider the upper case consonant to be different from the lower case consonant
+		7. Consider "ch" as one consonant
+		8. Consider any two consonants following without a vowel as the same as the first consonant in your counting
+	3. I want all the lines in your answer
+	4. I want the counts at the end of each line in the following form
+		line, consonant1: count, consonant2: count, total: count, ration 1, ration 2
+	5. Finally list the last ration separately for each line in the end
+
+The poem is the following:
+
+palikeDidi bhagavatamaTa
+palikincheDivāDu RāmabhadrūṇDaTa nē
+palikina bhavaharamagunaTa
+palikeda vēronDu gāthā palukaganēlā!
+
+Rules of Telugu consonants
+****************************
+1. Upper case is different from lower case and they should be counted as separate consonants
+2. A consonant followed by an "h", together both should be considered the same consonant preceding the "h"
