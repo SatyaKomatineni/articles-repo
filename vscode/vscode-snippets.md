@@ -1,19 +1,21 @@
-<!-- ********************* -->
-# What this article covers
-<!-- ********************* -->
 
-1. How to use vscode snippets to expedite coding, writing, documentation etc.
-2. What are vscode snippets
-3. How to see what snippets are available
-4. How to create new ones
-5. How to create snippets at a project level and a global level
-6. How to control what snippets show up based on the type of file you are editing
-7. JSON structure of the snippet file
-8. The type of files (for scope value)
-9. Mystery of the place holders
-10. How to use the snippets using Ctrl-space and Quick suggestions
+<!-- ********************* -->
+# Profit of VSCode Snippets
+<!-- ********************* -->
+Satya Komatineni, `Last updated: 9/1/2024`
 
-`Last updated: 9/1/2024`
+- [Profit of VSCode Snippets](#profit-of-vscode-snippets)
+- [How to see what snippets you already have](#how-to-see-what-snippets-you-already-have)
+	- [Using the Command Palette](#using-the-command-palette)
+	- [Using the current project directory](#using-the-current-project-directory)
+	- [Using the global configuration root](#using-the-global-configuration-root)
+- [How to create a snippet(s) of your own](#how-to-create-a-snippets-of-your-own)
+- [Intricacies of JSON structures](#intricacies-of-json-structures)
+- [Multiple snippet files](#multiple-snippet-files)
+- [How to do you cue vscode to place the snippet at the cursor](#how-to-do-you-cue-vscode-to-place-the-snippet-at-the-cursor)
+- [Understanding tabbing in the snippets](#understanding-tabbing-in-the-snippets)
+- [Pending: Quick Suggestions and invoking a suggestion with out a key stroke](#pending-quick-suggestions-and-invoking-a-suggestion-with-out-a-key-stroke)
+- [References](#references)
 
 <!-- ********************* -->
 # Profit of VSCode Snippets
