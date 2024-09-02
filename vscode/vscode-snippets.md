@@ -312,7 +312,7 @@ XML: xml
 These represent the file types. Once you are in that file type, the `scope` assignment will determine what snippets you see.
 
 <!-- ********************* -->
-# Reference
+# References
 <!-- ********************* -->
 [1. VSCode official documentation on snippets. A good one](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
