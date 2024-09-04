@@ -51,5 +51,6 @@ Really valuable even for non programmers.
 2. Key article URLs and what they cover
 3. Key video links and what they cover?
 
-## Location
-[This document and other work definitions are available at my github]()
+## Location and a few meta references
+
+1. This document and other work definitions are available at my github. [Here is the link](https://github.com/SatyaKomatineni/articles-repo/tree/master/work-definitions)
