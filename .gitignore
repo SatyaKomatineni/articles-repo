@@ -1,0 +1,15 @@
+#
+# Avoid office backup files
+# They start with ~
+# ~* means ignore all files that start with ~ anywhere in the directory or sub directories
+# ~$* means ignore all files that start with ~$ anywhere in the directory or sub directories
+#
+# The pattern for office backup files is:~$*
+#
+# ~$ seem to be the starting pattern for office backup files
+# I will leave for now the ~* pattern
+#
+~*
+~$*
+*.tmp
+*.~*
