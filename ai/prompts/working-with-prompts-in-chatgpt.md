@@ -33,7 +33,8 @@ The following is where that "button" is available on a project (as Mar 2025), an
 **Note**: Some of these links directly point to the .txt files and may be a bit hard to read. But they are in a format that you can use directly to type into ChatGPT
 
 1. [Language prompt](language-prompt-v1.txt). Lot of useful hints to work with languages, such as synonyms, conjugations, rewrites etc.
-2. [Creating a .md file in the right structre](chatgpt-project-system-prompt.txt). An example of a Project level prompt. As of now contains how to create a .md file in the right structure.
+2. [Project level prompts](chatgpt-project-system-prompt.txt). An example of a Project level prompt. 
+3. [Creating a .md file in the right structre](chatgpt-canvas-md-prompt-instructions.md) Instructions for structuring an md file. Non-textual, for a better read.
 
 
 
