@@ -26,7 +26,8 @@ Credit: Pramod Jain
 7. [Cost Analysis and Optimization Strategies](#cost-analysis-and-optimization-strategies)
 8. [Development Environment Landscape](#development-environment-landscape)
 9. [Challenges and Future Directions](#challenges-and-future-directions)
-10. [References](#references)
+10. [References as a list](#references-as-a-list)
+11. [References for annotations in the article](#references-for-annotations-in-the-article)
 
 ---
 
@@ -125,7 +126,57 @@ The emergence of **MCP 2.0** with enhanced **privacy controls** and **blockchain
 
 This comprehensive analysis demonstrates that while agentic AI tools offer transformative potential, successful adoption requires careful **ecosystem strategy** and **total cost modeling**. Enterprises must balance the flexibility of open-source frameworks against the reliability of commercial platforms, while developers should prioritize **MCP-compatible tools** to future-proof their implementations. As the market matures, platforms combining **visual development**, **transparent pricing**, and **robust safety controls** will likely emerge as dominant players.
 
-# References
+# References as a list
+
+1. [https://www.accelirate.com/agentic-ai/](https://www.accelirate.com/agentic-ai/)
+2. [https://www.dbos.dev/solutions/agentic-ai-platform](https://www.dbos.dev/solutions/agentic-ai-platform)
+3. [https://www.siroccogroup.com/demystifying-agentic-ai-pricing-what-to-consider-when-evaluating-different-pricing-models/](https://www.siroccogroup.com/demystifying-agentic-ai-pricing-what-to-consider-when-evaluating-different-pricing-models/)
+4. [https://bakingai.com/blog/langgraph-studio-ai-agent-ide/](https://bakingai.com/blog/langgraph-studio-ai-agent-ide/)
+5. [https://decagon.ai/resources/ai-agent-engine](https://decagon.ai/resources/ai-agent-engine)
+6. [https://www.geeky-gadgets.com/openai-agentic-framework/](https://www.geeky-gadgets.com/openai-agentic-framework/)
+7. [https://cloud.google.com/generative-ai-app-builder/pricing](https://cloud.google.com/generative-ai-app-builder/pricing)
+8. [https://wandb.ai/byyoung3/ml-news/reports/Meta-s-New-Llama-Agentic-System--Vmlldzo4ODc0NDYy](https://wandb.ai/byyoung3/ml-news/reports/Meta-s-New-Llama-Agentic-System--Vmlldzo4ODc0NDYy)
+9. [https://openstrategypartners.com/blog/mastering-llm-interaction-preparing-marketing-teams-for-agentic-ai-success-with-mcp/](https://openstrategypartners.com/blog/mastering-llm-interaction-preparing-marketing-teams-for-agentic-ai-success-with-mcp/)
+10. [https://www.microsoft.com/insidetrack/blog/ai-powered-agents-in-action-how-were-embracing-this-new-agentic-moment-at-microsoft/](https://www.microsoft.com/insidetrack/blog/ai-powered-agents-in-action-how-were-embracing-this-new-agentic-moment-at-microsoft/)
+11. [https://www.techtarget.com/searchitoperations/news/366616936/Amazon-Q-Bedrock-updates-make-case-for-cloud-in-agentic-AI](https://www.techtarget.com/searchitoperations/news/366616936/Amazon-Q-Bedrock-updates-make-case-for-cloud-in-agentic-AI)
+12. [https://www.reddit.com/r/ClaudeAI/comments/1gzv8b9/anthropics_model_context_protocol_mcp_is_way/](https://www.reddit.com/r/ClaudeAI/comments/1gzv8b9/anthropics_model_context_protocol_mcp_is_way/)
+13. [https://github.com/newsroom/press-releases/agent-mode](https://github.com/newsroom/press-releases/agent-mode)
+14. [https://aws.amazon.com/blogs/devops/streamline-development-with-new-amazon-q-developer-agents/](https://aws.amazon.com/blogs/devops/streamline-development-with-new-amazon-q-developer-agents/)
+15. [https://raygun.com/blog/announcing-mcp/](https://raygun.com/blog/announcing-mcp/)
+16. [https://aws.amazon.com/blogs/machine-learning/build-agentic-ai-solutions-with-deepseek-r1-crewai-and-amazon-sagemaker-ai/](https://aws.amazon.com/blogs/machine-learning/build-agentic-ai-solutions-with-deepseek-r1-crewai-and-amazon-sagemaker-ai/)
+17. [https://www.anthropic.com/news/model-context-protocol](https://www.anthropic.com/news/model-context-protocol)
+18. [https://community.aws/content/2qlet7NAUR02ygnurN1O74CIwTN/agentic-ai-framework-on-aws-the-design-patterns-and-considerations?lang=en](https://community.aws/content/2qlet7NAUR02ygnurN1O74CIwTN/agentic-ai-framework-on-aws-the-design-patterns-and-considerations?lang=en)
+19. [https://portkey.ai/blog/event-driven-architecture-for-ai-agents](https://portkey.ai/blog/event-driven-architecture-for-ai-agents)
+20. [https://powerplatformer.com/the-future-of-ai-why-agentic-systems-and-open-integration-will-redefine-the-race/](https://powerplatformer.com/the-future-of-ai-why-agentic-systems-and-open-integration-will-redefine-the-race/)
+21. [https://www.moveworks.com/us/en/resources/blog/agentic-ai-vs-ai-agents-definitions-and-differences](https://www.moveworks.com/us/en/resources/blog/agentic-ai-vs-ai-agents-definitions-and-differences)
+22. [https://www.pragmaticcoders.com/resources/ai-developer-tools](https://www.pragmaticcoders.com/resources/ai-developer-tools)
+23. [https://www.futurepedia.io/tool/crewai](https://www.futurepedia.io/tool/crewai)
+24. [https://www.relari.ai/blog/ai-agent-framework-comparison-langgraph-crewai-openai-swarm](https://www.relari.ai/blog/ai-agent-framework-comparison-langgraph-crewai-openai-swarm)
+25. [https://slashdot.org/software/comparison/Agentforce-vs-Decagon/](https://slashdot.org/software/comparison/Agentforce-vs-Decagon/)
+26. [https://www.moveworks.com/us/en/resources/blog/what-is-agentic-framework](https://www.moveworks.com/us/en/resources/blog/what-is-agentic-framework)
+27. [https://dev.to/ddeveloperr/understanding-google-cloud-platform-pricing-gcp-pricing-59h4](https://dev.to/ddeveloperr/understanding-google-cloud-platform-pricing-gcp-pricing-59h4)
+28. [https://www.redhat.com/en/topics/ai/what-is-agentic-ai](https://www.redhat.com/en/topics/ai/what-is-agentic-ai)
+29. [https://www.automationanywhere.com/rpa/agentic-ai](https://www.automationanywhere.com/rpa/agentic-ai)
+30. [https://www.datarobot.com/blog/agnostiq-agentic-ai-app-development/](https://www.datarobot.com/blog/agnostiq-agentic-ai-app-development/)
+31. [https://www.crewai.com/enterprise](https://www.crewai.com/enterprise)
+32. [https://aiagentstore.ai/compare-ai-agents/langbase-vs-langgraph](https://aiagentstore.ai/compare-ai-agents/langbase-vs-langgraph)
+33. [https://www.forbes.com/sites/janakirammsv/2024/11/30/why-anthropics-model-context-protocol-is-a-big-step-in-the-evolution-of-ai-agents/](https://www.forbes.com/sites/janakirammsv/2024/11/30/why-anthropics-model-context-protocol-is-a-big-step-in-the-evolution-of-ai-agents/)
+34. [https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/](https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/)
+35. [https://www.youtube.com/watch?v=XPHOybnXCd4](https://www.youtube.com/watch?v=XPHOybnXCd4)
+36. [https://www.accelirate.com/agentic-ai/](https://www.accelirate.com/agentic-ai/)
+37. [https://www.dbos.dev/solutions/agentic-ai-platform](https://www.dbos.dev/solutions/agentic-ai-platform)
+38. [https://www.siroccogroup.com/demystifying-agentic-ai-pricing-what-to-consider-when-evaluating-different-pricing-models/](https://www.siroccogroup.com/demystifying-agentic-ai-pricing-what-to-consider-when-evaluating-different-pricing-models/)
+39. [https://bakingai.com/blog/langgraph-studio-ai-agent-ide/](https://bakingai.com/blog/langgraph-studio-ai-agent-ide/)
+40. [https://decagon.ai/resources/ai-agent-engine](https://decagon.ai/resources/ai-agent-engine)
+41. [https://www.geeky-gadgets.com/openai-agentic-framework/](https://www.geeky-gadgets.com/openai-agentic-framework/)
+42. [https://cloud.google.com/generative-ai-app-builder/pricing](https://cloud.google.com/generative-ai-app-builder/pricing)
+43. [https://wandb.ai/byyoung3/ml-news/reports/Meta-s-New-Llama-Agentic-System--Vmlldzo4ODc0NDYy](https://wandb.ai/byyoung3/ml-news/reports/Meta-s-New-Llama-Agentic-System--Vmlldzo4ODc0NDYy)
+44. [https://openstrategypartners.com/blog/mastering-llm-interaction-preparing-marketing-teams-for-agentic-ai-success-with-mcp/](https://openstrategypartners.com/blog/mastering-llm-interaction-preparing-marketing-teams-for-agentic-ai-success-with-mcp/)
+45. [https://www.microsoft.com/insidetrack/blog/ai-powered-agents-in-action-how-were-embracing-this-new-agentic-moment-at-microsoft/](https://www.microsoft.com/insidetrack/blog/ai-powered-agents-in-action-how-were-embracing-this-new-agentic-moment-at-microsoft/)
+46. [https://www.techtarget.com/searchitoperations/news/366616936/Amazon-Q-Bedrock-updates-make-case-for-cloud-in-agentic-AI](https://www.techtarget.com/searchitoperations/news/366616936/Amazon-Q-Bedrock-updates-make-case-for-cloud-in-agentic-AI)
+47. [https://www.reddit.com/r/ClaudeAI/comments/1gzv8b9/anthropics_model_context_protocol_mcp_is_way/](https://www.reddit.com/r/ClaudeAI/comments/1gzv8b9/anthropics_model_context_protocol_mcp_is_way/)
+
+# References for annotations in the article
 
 [^1]: https://www.accelirate.com/agentic-ai/
 

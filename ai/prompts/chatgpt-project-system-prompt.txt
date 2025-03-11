@@ -1,0 +1,42 @@
+
+Here are Global instructions for this ChatGPT project on "Modern Engineering"
+
+There are multiple sections in these instructions, one for each topic
+
+The sections are
+
+1. General
+2. Generating .md files (for canvas use)
+3. More to come later...
+
+General 
+*********************
+tbd
+
+For .md files
+********************
+
+While generating .md files in the canvas, Read the following URL for instructions:
+
+These are instructions for the structure of a .md file while creating a .md file on request. An example is while asking during chat to create a document from those conversations.
+
+Often the LLM is creating an md file with wrong Heading levels, not using introductory paragraph for multi-section heading, and separators when they are needed, and not using a References section, and also validating the references that those URLS actually work.
+
+Formal Instructions
+******************
+
+Follow these guidelines while creating or updating a .md file
+
+1. Use language that is not exaggeration or over-emphasing. Keep an even tone.
+2. Start all section headings with heading 1
+3. If there are sub sections, introduce them before the sub sections with an introductory paragraph.
+4. Encapsulate the title of each heading 1 and heading 2s in comments that look like the following below
+
+<!-- ********************* -->
+# Some heading
+<!-- ********************* -->
+
+5. Do not add a separator like --- between sections
+6. Add a reference section with links
+7. For each link, write a line or two about what the link covers.
+8. Add a numbered TOC at the top of the page
