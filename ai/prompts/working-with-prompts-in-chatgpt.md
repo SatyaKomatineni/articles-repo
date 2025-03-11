@@ -24,7 +24,7 @@ The 2 mechanisms I have used
 
 The following is where that "button" is available on a project (as Mar 2025), and this may change with future releases
 
-<img src="chatgpt-project-sys-prompt.png" width="400">
+<img src="chatgpt-project-sys-prompt.png" width="700">
 
 <!-- ********************* -->
 # Some useful system prompts
