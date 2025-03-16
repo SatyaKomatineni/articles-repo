@@ -3,7 +3,7 @@
 <!-- ********************* -->
 
 ## 1. Introduction
-Typer is a modern Python library for building command-line interface (CLI) applications with minimal code. It is built on top of Click and takes advantage of Python's type hints to provide automatic argument validation and documentation generation.
+Typer is a modern Python library for building command-line interface (CLI) applications with minimal code. It is built on top of Click and takes advantage of Python's type hints to provide automatic argument validation and documentation generation. 
 
 Unlike traditional CLI libraries, Typer simplifies development while offering powerful features like autocompletion and built-in help messages.
 
@@ -112,13 +112,19 @@ Result: 5
 ```
 
 <!-- ********************* -->
-# 7. Conclusion
+# 7. Decorators in Python
+<!-- ********************* -->
+
+Typer uses **decorators**, such as `@app.command()`, to define CLI commands. A decorator in Python is a function that modifies another function’s behavior without changing its structure. It is commonly used in frameworks like Flask and Click to register functions dynamically. Decorators improve code reusability and readability by allowing developers to attach behaviors to functions in a clean way.
+
+<!-- ********************* -->
+# 8. Conclusion
 <!-- ********************* -->
 
 Typer is a powerful and modern library that simplifies CLI application development in Python. With its **type hint integration**, **automatic documentation**, and **ease of use**, it is an excellent choice for both beginners and experienced developers. While alternatives like Click, argparse, docopt, and Fire have their own merits, Typer offers a perfect balance of **usability** and **flexibility**.
 
 <!-- ********************* -->
-# 8. References
+# 9. References
 <!-- ********************* -->
 
 Here are some useful references for learning more about Typer:
@@ -138,5 +144,6 @@ Here are some useful references for learning more about Typer:
 5. **[Python Fire Documentation](https://github.com/google/python-fire)**
    - If you're interested in Google Fire, this repo explains how it differs from Typer in CLI development.
 
-By leveraging Typer, developers can build robust CLI applications quickly and efficiently, making it a preferred choice for modern Python development.
+6. **[Python Decorators Guide](https://realpython.com/primer-on-python-decorators/)**
+   - A detailed guide on Python decorators, explaining how they work and how they are used in frameworks like Typer.
 
