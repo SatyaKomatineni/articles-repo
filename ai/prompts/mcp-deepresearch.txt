@@ -1,0 +1,21 @@
+Can you help me do deep research and produce me .md file on these topics
+
+Goal
+****************
+Write me a deep research article on Anthropic's MCP protocol, which I can use to present, learn, understand. You can use .md format.
+
+It should cover the following topics
+************************************
+What is MCP?
+What is its high level architecture? Provide a mermaid diagram if possible to explain the concepts and label each line with the order and explnation.
+What are its features?
+How does it work in RAG vectorization scenario?
+What is an MCP server and client?
+Are there any implementations of MCP Servers?
+is there a ux component to an MCP Server?
+Are there an open source implementations of MCP Servers on github?
+What is a github mcp server and its features and capabilities?
+What are prominent youtube videos on MCP both for learning and expertise? Also you can indicate an key design articles in this space.
+How are non-anthropic ai companies responding to MCP?
+Are there any similar standards to MCP in that space?
+Tell me if there are out of the box MCP servers that I can readily use to test the ideas.
