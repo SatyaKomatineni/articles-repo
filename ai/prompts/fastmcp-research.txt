@@ -1,0 +1,15 @@
+Hello, can you do this for me
+
+Can you write an article about FastMCP based on the readme file URL that is at
+
+https://github.com/jlowin/fastmcp/blob/main/README.md#open-developer-guide
+
+
+You should
+
+1. Explain what is Fastmcp.
+2. its capabilities.
+3. List of topics covered at this URL.
+4. Further references with an explanation of each reference.
+5. Create me an md file based on my previous global project instructions on how to structure the md file.
+
