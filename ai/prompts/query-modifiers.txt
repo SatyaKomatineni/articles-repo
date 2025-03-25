@@ -1,0 +1,28 @@
+Hello, Can you write me an article with the following topics.
+********************************************
+
+
+Multi-query
+RAG fusion
+Query decomposition
+Step back prompting
+HYDE
+
+For each topic
+********************************************
+
+
+
+1. Briefly introduce
+2. Explain how it works
+3. Use a flow if it helps
+4. Give an example
+5. Very Briefly indicate if there are public libraries available
+
+In the end..
+********************************************
+
+
+In the end add a reference section with validated URLs for all of them in one place.
+
+Thank you very much.
