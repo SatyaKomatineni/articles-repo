@@ -113,6 +113,41 @@ User Query → Generate Hypothetical Answer → Embed Answer → Vector Search �
 Supported in **LlamaIndex**, **LangChain**, and **OpenAI cookbook** examples.
 
 <!-- ********************* -->
+# Reranking vs RAG Fusion
+<!-- ********************* -->
+
+**Overview:**
+Reranking and RAG Fusion are often used together but serve different purposes in the RAG pipeline.
+
+### Reranking
+- **What it is:** A post-processing step that reorders retrieved documents based on relevance.
+- **Use case:** Works on results from a single query or combined document set.
+- **How:** Typically uses cross-encoders or scoring functions to refine document order.
+
+### RAG Fusion
+- **What it is:** A retrieval strategy that gathers documents from multiple query rewrites.
+- **Use case:** Increases coverage and diversity of documents.
+- **How:** Uses fusion methods (e.g., Reciprocal Rank Fusion) to combine and sort documents.
+
+### Combined Flow:
+1. User query → Multiple rewrites (RAG Fusion)
+2. Retrieve documents for each query
+3. Merge results
+4. Apply reranking
+5. Generate answer
+
+**TL;DR Comparison:**
+
+| Feature         | Reranking                         | RAG Fusion                                      |
+|----------------|------------------------------------|------------------------------------------------|
+| **Focus**       | Reorder docs based on relevance   | Improve retrieval by using multiple queries    |
+| **Input**       | One list of documents              | Multiple lists (one per query variant)         |
+| **Output**      | A reordered single list            | A fused list (may also be reranked)           |
+| **Optional in** | RAG Fusion                         | Not applicable                                 |
+
+They are **complementary**: RAG Fusion improves retrieval breadth, while reranking enhances final precision.
+
+<!-- ********************* -->
 # References
 <!-- ********************* -->
 
