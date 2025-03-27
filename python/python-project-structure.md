@@ -11,8 +11,10 @@ Note: Initial write (Hope to take it through a few revisions, 3/27/25)
 5. Handling Nested Subdirectories
 6. Utilizing the `__main__` Function
 7. Executing Modules with the `-m` Flag
-8. Conclusion
-9. References
+8. Differences Between Running With and Without `-m`
+9. Running Without `-m`: Considerations
+10. Conclusion
+11. References
 
 <!-- ********************* -->
 # Project Structure Overview
@@ -164,10 +166,32 @@ python -m subdir2.p7
 This command informs Python to run `p7.py` as a module within the `subdir2` package, preserving the package hierarchy and ensuring that imports function correctly.
 
 <!-- ********************* -->
+# Differences Between Running With and Without `-m`
+<!-- ********************* -->
+
+Using `python -m subdir.module` treats the file as part of a module hierarchy and sets up the import context correctly. This allows relative imports like `from .p1 import function_name` to work properly.
+
+In contrast, running a file directly with `python subdir/module.py` executes it as a standalone script. In this case, relative imports will fail with an `ImportError` because the script has no known parent package.
+
+Additionally, using `-m` ensures that Python uses the current directory as the top-level of the module search path, enabling cross-directory imports to work consistently when your subdirectories are structured as packages.
+
+<!-- ********************* -->
+# Running Without `-m`: Considerations
+<!-- ********************* -->
+
+If you prefer to run a script without the `-m` flag (e.g., `python subdir2/p7.py`), here are a few things to ensure:
+
+- Avoid relative imports like `from .p1 import ...`. Use absolute imports instead: `from subdir1.p1 import ...`.
+- Make sure the root of your project is either in your `PYTHONPATH` or is your current working directory.
+- Be aware that the script will be treated as `__main__`, not as part of its package.
+
+This approach works for quick scripts or smaller projects, but for larger projects with deeper structure and reuse, the `-m` approach is more robust.
+
+<!-- ********************* -->
 # Conclusion
 <!-- ********************* -->
 
-Properly structuring a Python project with multiple subdirectories enhances code organization and reusability. By converting subdirectories into packages, implementing absolute imports, supporting intra-package reuse, managing nested subdirectories, utilizing the `__main__` function, and executing modules with the `-m` flag, you can create a maintainable and scalable project architecture.
+Properly structuring a Python project with multiple subdirectories enhances code organization and reusability. By converting subdirectories into packages, implementing absolute imports, supporting intra-package reuse, managing nested subdirectories, utilizing the `__main__` function, understanding the differences between `-m` and direct execution, and setting up the proper execution environment, you can create a maintainable and scalable project architecture.
 
 <!-- ********************* -->
 # References
