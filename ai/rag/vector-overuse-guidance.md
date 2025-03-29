@@ -13,7 +13,8 @@ Note: Created from conversations with ChatGPT. (Consider it a draft!)
 5. Decision Flowchart
 6. Additional Caution Areas
 7. Summary
-8. References
+8. What we are trying to prevent?
+9. References
 
 <!-- ********************* -->
 # Introduction
@@ -121,6 +122,51 @@ While vector embeddings are a powerful tool, they are **not universally applicab
 - Your data set is small, known, or static.
 
 Be intentional about tool choice to reduce complexity, avoid hallucinations, and improve overall GenAI effectiveness.
+
+<!-- ********************* -->
+# What we are trying to prevent through these guidelines?
+<!-- ********************* -->
+
+When we provide guidelines, they must "prevent" tangibly identifiable inefficiences.
+
+## 1. RAG is about Retrieval, not Vectors
+Not every RAG use case requires semantic search. Retrieval can be powered by metadata filters, keyword search, APIs, or structured queries. Treat vectors as one of several retrieval tools—not the default.
+
+## 2. Don’t Vectorize Structured Data
+Structured data is already optimal for querying. Converting it into embeddings typically reduces fidelity and introduces unnecessary layers. Keep structured sources (e.g., SQL, JSON APIs) in their native form for maximum precision.
+
+## 3. Prefer Direct Text and APIs Where Applicable
+If the data is readily accessible and well-structured, use it directly. Many RAG pipelines perform better when fed relevant raw text from trusted sources, rather than relying on fuzzy embedding matches.
+
+## 4. Avoid Preemptive Enterprise-Wide Vectorization
+Vectorizing all organizational content without defined use cases often mirrors past over-investments in data lakes or warehouses. This leads to cost, complexity, and governance challenges. Build vector pipelines in response to real application needs—not speculative infrastructure planning.
+
+## 5. Evaluate Retrieval Effectiveness
+Many teams skip rigorous evaluation of their retrieval systems. Poor chunking or low-quality embeddings can silently degrade downstream performance. Introduce quality gates like retrieval precision, recall, MRR, and chunk audit logs.
+
+## 6. Avoid Vector Creep
+Once vector infrastructure exists, there's a tendency to apply it inappropriately across unrelated use cases. Resist embedding for problems that don't involve ambiguity, natural language, or true semantic fuzziness.
+
+## 7. Plan for Lifecycle Management
+Vectors are not static assets. Embeddings can become stale over time as content evolves. Establish policies for re-indexing, refreshing with updated embedding models, and version control.
+
+## 8. Watch for Overfitting to Data Artifacts
+Vector search solutions can appear to work well during testing, especially when evaluation is based on narrow or familiar prompts. But if retrieval relies too heavily on specific phrasing or structure in your documents, the solution may not generalize. This is a form of overfitting. 
+- ✅ Encourage validation using real-world or blind prompts, and test against future drift or cross-team scenarios.
+- ✅ Avoid tuning pipelines exclusively to a fixed dataset without diverse user inputs.
+
+### Summary Table
+
+| Principle                          | Preferred Practice                                      |
+|-----------------------------------|----------------------------------------------------------|
+| Retrieval-first thinking          | Choose the best method for the use case, not default vectors |
+| Preserve structured data as-is    | Avoid vectorizing relational or tabular sources          |
+| Use text or APIs where simpler    | Don’t route around deterministic sources unnecessarily   |
+| Just-in-time over just-in-case    | Build vector pipelines for concrete problems, not broadly scoped prep work |
+| Measure before scaling            | Use metrics to validate retrieval performance            |
+| Be vigilant against misuse        | Apply vectors only to semantically fuzzy or ambiguous tasks |
+| Generalize beyond test data       | Ensure solutions are robust, not just fitted to known inputs |
+
 
 <!-- ********************* -->
 # References
