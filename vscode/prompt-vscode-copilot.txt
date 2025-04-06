@@ -1,0 +1,13 @@
+Basic ask
+*****************
+Ok, I bite. 
+
+Expand on the "basic usage notes for using github copilot in vscode". Assume I have already installed it and used it a little bit. See if you can add otheir feature called "add context". Also provide some details around
+
+1. what I can do with it in the file that I have open?
+
+2. how can I advise or ask copilot to prepare a folder that I have hightlighted, say for turning that into a python module (assuming it is an empty folder) at this point. can it create hence new files in that folder?
+
+3. Expand on its comment capabilities
+
+4. Also provide key references from their homepage, key blogs, or any useful videos. Especially around add context and its capabilities to look around the whole repo for its analysis.
