@@ -1,0 +1,9 @@
+One summarizing question:
+
+If i want to run python launch configurations for the following 
+
+1. just run
+2. run with debug
+3. run with debug with additional command line inputs I can supply during run as -param1 etc on the command line
+
+what is my best approach for doing that with or without launch.json, preferably if possible with just the darn menu options? if I have to use launch.json, give me what that prrocess looks like, step by step, and with examples of the launch.json files
