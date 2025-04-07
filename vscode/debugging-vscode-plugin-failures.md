@@ -3,56 +3,118 @@
 > **Disclaimer:** This document was prepared with assistance from ChatGPT. While care was taken to ensure accuracy, please validate technical details independently where necessary.
 
 ## ❗ Problem Summary
+
+### 🧠 Root Problem Description
+
 Visual Studio Code (VS Code) failed to install extensions, throwing errors like:
+
 - `Error while fetching extensions. Failed to fetch`
 - `net::ERR_CONNECTION_RESET`
 - `No default agent registered`
 - Frequent `Extension Host is unresponsive` events
 
 Despite:
+
 - Browsers working normally (extensions marketplace URL reachable)
 - No VPN, proxy, or third-party antivirus
 - A clean reinstall of VS Code
+
+### 🧾 System Configuration Snapshot
+
+- **Operating System**: Windows 11 (Home Edition)
+- **Network Setup**: Personal laptop on home Wi-Fi, no VPN or proxy
+- **Antivirus**: Only Windows Defender
+- **VS Code Installation Mode**: Initially user mode; attempted admin mode but reverted to user mode after limitations
+
+### 🔎 Things That Could Go Wrong (Diagnosed and Ruled Out)
+
+1. **VS Code installation corruption** — Ruled out via full uninstall and reinstall
+2. **Proxy misconfiguration** — No proxy present, confirmed via `netsh`
+3. **Environment variables interfering** — None found
+4. **Firewall blocking outbound Electron HTTPS** — Tested with firewall off and exceptions
+5. **TLS certificate chain issues** — Trusted root certs present and valid
+6. **Node.js interference** — Removed Node.js entirely during debugging
+7. **Network/router issue** — Tested with mobile hotspot (same error)
+8. **Marketplace unreachable** — Reachable via browser, unreachable via VS Code
+9. **Network stack corruption** — Confirmed as root cause
+10. **[Suspected] Admin-mode VS Code install instead of user-mode** — Analyzed and ruled out
+
+### ✅ What Finally Worked
+
+Running the following fixed the issue:
+
+```bash
+netsh winsock reset
+```
+
+Followed by a full system reboot.
+
+
 
 ---
 
 ## ✅ Steps Taken (And Eliminated)
 
 ### 🔍 System & Network-Level Checks
+
 - ✅ Verified network marked as **Private**, not Public
 - ✅ Switched to **mobile hotspot** to rule out router/ISP
 - ✅ Restarted router — no effect
 - ✅ Verified no VPN, proxy, or special DNS configurations
 
 ### 🔍 VS Code Checks
+
 - ✅ Uninstalled and reinstalled VS Code
 - ✅ Fully cleared config and cache directories:
   - `%APPDATA%\Code`
   - `%USERPROFILE%\.vscode`
   - `%LOCALAPPDATA%\Programs\Microsoft VS Code`
 - ✅ Set VS Code settings:
+
 ```json
 "http.proxy": null,
 "http.proxyStrictSSL": false
 ```
+
 - ✅ Disabled firewall for test
 
 ### 🔍 Environment/Proxy Validation
+
 - ✅ Verified:
+
 ```bash
 netsh winhttp show proxy  # Output: Direct access
 ```
+
 - ✅ Confirmed no `NODE_OPTIONS`, `HTTP_PROXY`, `HTTPS_PROXY` env vars
 
 ### 🔍 Certificate and TLS Checks
+
 - ✅ Certificates present in `certmgr.msc`
 - ✅ Browsers could reach: `https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery`
 - ✅ Even `--ignore-certificate-errors` didn’t help VS Code
 
 ---
 
+## 💣 Admin vs User Mode Install (Clarification)
+
+### 🔎 Key Observations
+
+1. **There are two types of VS Code installations**:
+
+   - **System/Administrator mode**: Installed for all users (requires admin rights)
+   - **User mode**: Installed only for the current user (default for personal laptops)
+
+2. **User mode is preferred** on personal laptops — especially on Windows Home, which restricts admin installs
+
+3. Suspicion is that If not installed in Admin mode, VS Code might not function as expected, especially if network policies, file access, or sandboxing interfere. Anyway admin version cannot be installed on personal laptops with home editions.
+
+4. In this case, the VS Code install in **user mode was correct and not the cause** of any firewall or connectivity failure
+
 ## 💣 Final Clue: "No default agent registered"
+
 This VS Code error means its internal Node.js/Electron-based HTTPS system failed to initialize a usable agent — usually due to:
+
 - Broken TLS stack
 - Proxy misrouting
 - Winsock corruption
@@ -62,12 +124,15 @@ This VS Code error means its internal Node.js/Electron-based HTTPS system failed
 ## ✅ **The Fix**: Winsock Reset
 
 ### 🔧 Command:
+
 ```bash
 netsh winsock reset
 ```
+
 Followed by a full **system reboot**.
 
 ### ✅ Result:
+
 - VS Code Extensions panel worked again
 - PowerShell extension and others installed from Marketplace
 - No more connection reset or TLS agent errors
@@ -75,18 +140,22 @@ Followed by a full **system reboot**.
 ---
 
 ## 🧠 What is Winsock?
+
 **Winsock (Windows Sockets)** is the Windows API that allows applications to communicate over TCP/IP networks. It handles:
+
 - DNS resolution
 - Socket creation and teardown
 - Protocol management
 - TCP/IP communication for many apps (including Node.js, Electron, browsers, and more)
 
 ### 🔧 What `netsh winsock reset` Does:
+
 - Restores the Winsock catalog to its default configuration
 - Clears third-party LSPs (Layered Service Providers)
 - Removes custom TCP/IP protocol hooks or corrupted entries
 
 ### ❗ How It Gets Corrupted:
+
 - Partial network driver updates
 - VPN or proxy tools installing/removing LSPs improperly
 - Malware modifying low-level networking behavior
@@ -95,6 +164,7 @@ Followed by a full **system reboot**.
 - Improper uninstallers (network monitoring apps, proxies, or filters)
 
 ### 🔁 Resulting Symptoms Can Include:
+
 - Only *some* apps (like VS Code, Discord, GitHub Desktop) can't connect, while browsers work fine
 - Repeated `net::ERR_CONNECTION_RESET` errors
 - Flaky behavior: sometimes connections work, other times fail
@@ -106,35 +176,43 @@ Followed by a full **system reboot**.
 ## 🔐 Understanding Network and Firewall Configuration in Windows
 
 ### 🔍 Checking Network Type (Private vs Public)
+
 1. Go to **Settings > Network & Internet > Wi-Fi or Ethernet**
 2. Click the name of the network you are connected to
 3. Under **Network Profile**, check if it is set to **Public** or **Private**
 
 **Difference between types:**
+
 - **Private**: Trusted networks (home, work). File/printer sharing and app access are more permissive.
 - **Public**: Untrusted networks (cafes, hotels). Most inbound connections are blocked by default.
 
 **How to know what you're on:**
+
 - Windows shows the current profile under the connection’s name in **Network & Internet** settings
 - Your **home Wi-Fi** should typically be set to **Private** for smooth app connectivity
 
 ### 🔥 Accessing Windows Firewall Settings
+
 1. Press `Windows + S`, type **"Windows Security"**, and open it
 2. Go to **Firewall & network protection**
 3. You'll see options for **Domain**, **Private**, and **Public** network profiles
 4. Click the active network → Toggle firewall on/off
 
 ### 🔐 Allowing VS Code Through the Firewall
+
 1. In **Firewall & network protection**, click **"Allow an app through firewall"**
 2. Click **Change settings** (admin required)
 3. Find **"Code"** or **"Visual Studio Code"** in the list
    - If not listed, click **"Allow another app"** and **browse for the VS Code executable**
 
 ### 🔎 Finding VS Code Executable with PowerShell
+
 ```powershell
 Get-Command code | Select-Object Source
 ```
+
 Or if installed in default path:
+
 ```
 C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe
 ```
@@ -142,6 +220,7 @@ C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe
 ---
 
 ## 🧾 Checking Certificate Validity in Windows
+
 1. Press `Win + R`, type `certmgr.msc`, press Enter
 2. Navigate to **Trusted Root Certification Authorities > Certificates**
 3. Look under the **"Status"** column
@@ -154,39 +233,50 @@ C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe
 ## 🛠️ Using `netsh` to Debug Network Issues
 
 ### ✅ Check proxy settings:
+
 ```bash
 netsh winhttp show proxy
 ```
+
 Use this to confirm if a system proxy is interfering with your app. If something is set, it may route HTTPS through a proxy that blocks or resets connections.
 
 ### ✅ Reset Winsock stack:
+
 ```bash
 netsh winsock reset
 ```
+
 Fixes issues where socket handlers or TCP/IP extensions have become corrupt, especially after uninstalling VPNs, proxies, or network tools.
 
 ### ✅ View TCP global settings:
+
 ```bash
 netsh interface tcp show global
 ```
+
 This command shows system-wide TCP behavior settings, such as congestion control, auto-tuning level, and other optimizations. Useful to identify if tuning options are limiting throughput or responsiveness.
 
 ### ✅ Reset all TCP/IP settings:
+
 ```bash
 netsh int ip reset
 ```
+
 Resets the full TCP/IP stack and clears any custom configuration applied by third-party tools or faulty drivers.
 
 ### ✅ Trace and diagnose connection issues:
+
 ```bash
 netsh trace start scenario=InternetClient capture=yes
 netsh trace stop
 ```
+
 Generates a deep diagnostic ETL trace file showing every packet and system decision related to your internet client usage. Use tools like Microsoft Network Monitor to interpret results and uncover dropped connections, DNS issues, or handshake failures.
 
 ---
 
 ## ✅ Final Takeaway
+
 If your browser can connect to a site but VS Code (or another Electron-based app) fails with errors like `net::ERR_CONNECTION_RESET` or `Failed to fetch` — and you've ruled out proxy, certs, firewall, and reinstalling:
 
 > 🔧 Run: `netsh winsock reset` → Reboot → Test again
@@ -196,6 +286,7 @@ It can resolve silent, deep issues that **only affect certain kinds of apps**, n
 ---
 
 ## 📚 Helpful References
+
 - [Winsock reset explained (Microsoft)](https://support.microsoft.com/help/299357) — Covers what Winsock is, how to reset it, and when it helps.
 - [Visual Studio Code network troubleshooting](https://code.visualstudio.com/docs/setup/network) — Official tips from Microsoft on how VS Code handles proxies and networking.
 - [Node.js TLS documentation](https://nodejs.org/api/tls.html) — Details on how Node handles secure connections and certificate validation.
