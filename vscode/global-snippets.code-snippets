@@ -1,22 +1,35 @@
 {
-	//
-	// A sample global snippets files for vscode 
+	// Place your global snippets here. 
 	//
 	// ********************************************
 	// location: ~/.config/Code/User/global-snippets.code-snippets
 	// on windows: %APPDATA%\Code\User\global-snippets.code-snippets
 	// for me on windows: C:\Users\satya\AppData\Roaming\Code\User\snippets
 	//
-	// Re: https://www.satyakomatineni.com/akc/item/5748
-	//
+	// article location
 	// ********************************************
+	// tbd
 	//
+	// Web  references for this file and further reading
+	// **************************************************
+	// My notes on knowledge management website: https://www.satyakomatineni.com/akc/item/5748
+	// github article on vscode snipptes: https://github.com/SatyaKomatineni/articles-repo/blob/master/vscode/vscode-snippets.md
+	// this file on github: https://github.com/SatyaKomatineni/articles-repo/blob/master/vscode/global-snippets.code-snippets
+	//
+	// Version 2.0, 4/15/2025
+	// ********************************************
+	// For text comments
+	//  
+	// About
+	// ********************************************
 	// Each snippet is defined under a snippet name and has a scope, prefix, body and description. 
 	// Add comma separated ids of the languages where the snippet is applicable in the scope field. 
 	// If scope is left empty or omitted, the snippet gets applied to all languages. 
 	//
 	// The prefix is what is used to trigger the snippet and the body will be expanded and inserted. 
 	//
+	// Variables $0, 1, 2 etc.
+	// ********************************************
 	// Possible variables are: 
 	// $1, $2 for tab stops, 
 	// $0 for the final cursor position, 
@@ -24,7 +37,8 @@
 	// and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	//
-	// Example:
+	// Example
+	// ********************************************
 	// "Print to console": {
 	// 	"scope": "javascript,typescript",
 	// 	"prefix": "log",
@@ -159,5 +173,12 @@
 			"# **************************************************"
 		],
 		"description": "Creates an __init__.py file with comments explaining its purpose."
+	},
+	"star line": {
+		"prefix": "sk_star_under_line",
+		"body": [
+			"**************************************************"
+		],
+		"description": "An underline in a text file"
 	}
 }
