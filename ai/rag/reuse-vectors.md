@@ -112,20 +112,15 @@ As your enterprise matures in vector strategy, consider exploring:
 
 ## References
 
-1. [**How to Build a Semantic Search Engine** – Pinecone Blog](https://www.pinecone.io/learn/semantic-search/)
-   - Explains vector indexing, semantic search, and includes architectural tips relevant to reuse.
+1. [Unifying Enterprise AI: Overcoming the RAG Sprawl Challenge – Vectara Blog](https://www.vectara.com/blog/unifying-enterprise-ai-overcoming-the-rag-sprawl-challenge) – Discusses the need to unify vector databases to avoid duplication and promote reuse across teams in enterprise RAG architectures.
 
-2. [**Beyond RAG: Evolving Retrieval Systems** – Weaviate Whitepaper](https://weaviate.io/blog/retrieval-augmented-generation)
-   - Discusses advanced RAG architecture where reused vectors play a central role.
+2. [Optimize Vector Databases, Enhance RAG-Driven Generative AI – Intel Tech Medium Blog](https://medium.com/intel-tech/optimize-vector-databases-enhance-rag-driven-generative-ai-90c10416cb9c) – Offers strategies to improve vector database performance and benchmarking in generative AI systems.
 
-3. [**Vector Database Benchmarking** – Zilliz/Ann-Benchmarks](https://ann-benchmarks.com/)
-   - Offers insight into storage and retrieval performance considerations.
+3. [Vector Databases for Gen AI Applications – Medium by Bijit Ghosh](https://medium.com/@bijit211987/power-of-vector-databases-for-gen-ai-applications-a63d4cf7e352) – Highlights the importance of vector stores in GenAI applications and the role of reusable embeddings.
 
-4. [**Semantic Layer and Vector Management** – Arize AI](https://arize.com/blog/observability-of-embeddings/)
-   - Explores the use of vector abstractions and management layers to support AI observability.
+4. [The Role of Vector Databases in Generative AI Applications – AWS Database Blog](https://aws.amazon.com/blogs/database/the-role-of-vector-datastores-in-generative-ai-applications/) – Details how to implement and manage vector databases in the context of large-scale AI applications.
 
-5. [**Embedding Governance Frameworks** – McKinsey Digital Insights](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights)
-   - Proposes enterprise guidelines for treating embeddings as first-class assets.
+5. [Paragraph Reuse Metrics Using AI Vector Similarity – LinkedIn by Alex Livesley](https://www.linkedin.com/pulse/paragraph-reuse-metrics-using-ai-vector-similarity-w-alex-livesley-l1vvc) – Demonstrates practical reuse of vectors to measure similarity in enterprise-scale document collections.
 
 ---
 
