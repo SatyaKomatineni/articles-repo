@@ -1,0 +1,20 @@
+Create me a .md article about reuse of vectorized data in Enterprises.
+
+Among other relevant material it should cover
+
+1. Are there opportunities for reusing vectors in a large enterprise? if so what are they?
+2. What kind of unstructured data that is in enterprises that is suitable for sharing their vector representations?
+3. What kind of vectorized data is not suitable for reuse?
+4. What are the challenges with reusing vectorized data?
+5. what are good guidelines for designing vector stores so that reuse is valid and how to go about it?
+6. What are some design considerations?
+7. Are there examples in the industry where this is starting to be practiced?
+8. Provide references with an explanation of each reference in a few lines.
+9. Use my global project level instructions while creating the md file.
+10. Also consider, given this context, what additional questions I should be asking and include them in the article.
+11. When opening a new section that has subsections introduce the section in a line or two or a parapgraph.
+12. For bullets prefer numbering them
+13. For sections like challenges, guidelines, and design considerations, explain the sub elements with a few lines (not lengthy, and yet not too brief)
+14. Make the total article length, a longer article.
+15. Name the article: Vector reuse ver 2
+11. Thanks for your help.
