@@ -1,6 +1,8 @@
 # Scalable Prompt Management in MCP Architectures: Using Tool Servers and Extensions
 
-Managing thousands of prompts within an MCP-enabled system presents challenges for scalability, user experience, and system design. This article explores how MCP extensions and the introduction of a dedicated MCP Tool Server may address these challenges.
+**Managing thousands of prompts** within an MCP-enabled system presents challenges for scalability, user experience, and system design. 
+
+This article explores how **MCP extensions** or/and the introduction of a **dedicated MCP Tool Server** may address these challenges.
 
 # Table of Contents
 
