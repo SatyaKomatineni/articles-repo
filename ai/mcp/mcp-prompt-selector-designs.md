@@ -160,6 +160,26 @@ High level diagram (pencil drawn, for now)
 
 <img src="./mcp-prompt-selector-arch.jpg" width="700"/>
 
+## Features
+
+1. Browse and select prompts on demand by end users
+2. Get the body of the prompts chosen
+3. Use the prompts then in the GenAI application like a chat bot
+
+## Components
+
+1. An independent Prompt Store: Where employees can create/share/udpate their reusable prompts. These prompts can be organized with any number of attributes such as department, area, application, etc.
+2. An MCP Prompt Server: A traditional MCP server that lists prompts and provide text for each prompt. This is a linear list. 
+3. An MCP Prompt Selector Tools Server: An MCP Tool server that can provision a variety of search tools to indicate the prompts that are to be further selected by an end user.
+4. Chat: A client application where users make use of the prompts
+
+## Prompt Store
+
+1. A stand alone system with ux and database for users to create prompts and categorize them in to several private or public buckets.
+2. Allows multiple attributes on the prompts including role based security, allocation
+## Prompt MCP Server
+
+1. A traditional MCP server
 # Conclusion
 
 Given the scale and complexity of managing thousands of prompts in enterprise environments, implementing structured approaches like MCP server extensions or introducing a dedicated MCP Tool Server is not over-architecting but rather a necessary evolution to maintain efficiency and scalability.​
