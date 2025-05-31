@@ -1,20 +1,22 @@
 # Understanding How Programs Use Windows Startup Features #
 
-**About**: This is an introductory article on how to manage programs that start automatically when you login.
+**This is an introductory article on how to manage programs that start automatically when you login.**
 
 Answers questions like
 
-1. How do I stop a program from starting automatically at login?
-2. Are there different ways program can be started automatically?
-3. What if I can't find a program that seem to start automatically but I can't see it in the startup up folder or in the Task Manager menu?
-4. Are there advanced utilities to dig deeper?
-5. What are some references where I can read or learn more?
+> 1. How do I stop a program from starting automatically at login?
+> 2. Are there different ways program can be started automatically?
+> 3. What if I can't find a program that seem to start automatically but I can't see it in the startup up folder or in the Task Manager menu?
+> 4. Are there advanced utilities to dig deeper?
+> 5. What are some references where I can read or learn more?
 
-Windows provides several mechanisms that allow programs to automatically launch when the system starts or when a user logs in. These features are widely used for convenience, background services, update agents, and essential system utilities. This article explores the most common and uncommon methods by which programs use Windows startup features, including an expanded explanation of the Windows Registry “Run” keys and a real-world example using Discord.
+Windows provides several mechanisms that allow programs to automatically launch when the system starts or when a user logs in. These features are widely used for convenience, background services, update agents, and essential system utilities. 
+
+This article explores the most common and uncommon methods by which programs use Windows startup features, including an expanded explanation of the Windows Registry “Run” keys and a real-world example using Discord.
 
 This also introduces a program called autoruns.
 
-**Autoruns** is a free utility developed by **Microsoft's Sysinternals team**, designed to display everything that starts up automatically with Windows. This includes programs in the startup folder, registry Run keys, Task Scheduler, services, drivers, browser helper objects, and more.
+**Autoruns** is a free utility developed by **Microsoft's Sysinternals team**, designed to display everything that starts up automatically with Windows. This includes programs in the **startup folder, registry Run keys, Task Scheduler, services, drivers, browser helper objects,** and more.
 
 ---
 
