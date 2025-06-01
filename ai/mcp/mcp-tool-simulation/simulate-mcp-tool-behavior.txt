@@ -1,0 +1,25 @@
+Goal:
+I want to test how an  LLM chat can negotiate with a set of "MCP Tools" without actually having an MCP server.
+
+Approach:
+
+Provide a set of tools in a prompt like
+
+toolname: tool1
+    Description: tool1 Description
+    argument 1: some argument
+    output: Some output
+
+Ask 1: Provide 5 such sample tools
+
+System Prompt:
+
+What shoould I tell the LLM when a question comes how it should give "preference to the Tools" to answer that question first, 
+
+and if no answer found use the general knowledge but indicate in the answer what method is used to pick the answer.
+
+Ask 2: Give that system prompt
+
+Sample questions:
+
+Ask 3: Give me a few sample questions to test this hypothesis.

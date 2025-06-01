@@ -1,0 +1,79 @@
+
+<!-- ********************* -->
+Fursther Tests
+<!-- ********************* -->
+Here are a few more questions for thorough testing.
+
+<!-- ********************* -->
+## Tool-Matching Questions
+<!-- ********************* -->
+
+These questions are expected to match the predefined tools directly.
+
+### Matches `get_weather`
+
+* What’s the weather in Tokyo today?
+* Is it raining in New York?
+* What’s the humidity like in Cairo?
+
+### Matches `define_term`
+
+* What does “resilience” mean?
+* Define the term “entropy.”
+* What is the meaning of “mollify”?
+
+### Matches `convert_units`
+
+* Convert 100 kilometers to miles.
+* What is 32°F in Celsius?
+* How many liters are in a gallon?
+
+### Matches `summarize_text`
+
+* Summarize this: “Climate change is accelerating due to greenhouse gas emissions...”
+* Can you give me a short summary of this paragraph?
+* Please condense this article into three sentences.
+
+### Matches `get_stock_price`
+
+* What is the current stock price of Google?
+* Give me Apple’s market price now.
+* How is TSLA performing today?
+
+<!-- ********************* -->
+## Fallback-to-General-Knowledge Questions
+<!-- ********************* -->
+
+These are not covered by the defined tools and should trigger general model reasoning.
+
+### General Knowledge
+
+* What is the capital of Finland?
+* Who was the first person on the Moon?
+* How many continents are there?
+
+### Translation Requests
+
+* How do you say “thank you” in Japanese?
+* Translate “good night” to Spanish.
+
+### Historical / Time-bound
+
+* Who won the FIFA World Cup in 2014?
+* What happened on 9/11?
+
+<!-- ********************* -->
+## Edge Cases & Ambiguity Tests
+<!-- ********************* -->
+These test the LLM’s reasoning to pick the best-fitting tool, or fail gracefully.
+### Partial Overlap
+
+* Tell me the temperature difference between Paris and Berlin. *(Should call `get_weather` twice?)*
+* What is the meaning and origin of “serendipity”? *(Meaning matches, origin does not)*
+
+### Multiple Matching Tools
+
+* Give me the weather and summarize this report. *(Tests multitool parsing)*
+* Define “calor” and translate it to English. *(Only one part matches a tool)*
+
+
