@@ -1,12 +1,16 @@
 <!-- ********************* -->
-
-# GitHub Copilot Chat Customization
-
+# Using / commands in GitHub Copilot, the long saga!
 <!-- ********************* -->
 
 **Note:** This article was generated with the assistance of ChatGPT and may contain automated content. Please verify critical details.
 
-GitHub Copilot Chat can be tuned in two complementary ways—*instruction files* and *prompt files*.  The first layer gives Copilot persistent coding guidelines; the second supplies on‑demand shortcuts that you trigger with a slash command.  This page shows the folders, file formats, example contents, and typical workflows for both approaches.
+GitHub Copilot Chat can be tuned in two complementary ways—*instruction files* and *prompt files*.  
+
+The first layer gives Copilot persistent coding guidelines; 
+
+**The second supplies on‑demand shortcuts that you trigger with a slash command.**
+
+This article shows the folders, file formats, example contents, and typical workflows for both approaches.
 
 ## Table of contents
 
