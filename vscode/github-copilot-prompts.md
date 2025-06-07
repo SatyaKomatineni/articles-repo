@@ -1,5 +1,7 @@
 <!-- ********************* -->
+
 # GitHub Copilot Chat Customization
+
 <!-- ********************* -->
 
 **Note:** This article was generated with the assistance of ChatGPT and may contain automated content. Please verify critical details.
@@ -17,7 +19,9 @@ GitHub Copilot Chat can be tuned in two complementary ways—*instruction fi
 7. References
 
 <!-- ********************* -->
+
 # Instruction files
+
 <!-- ********************* -->
 
 Instruction files are background rule sheets.  When present, their text is silently appended to every **code‑generation** request Copilot makes inside the workspace (or only for specific paths, if a glob is provided).
@@ -38,8 +42,17 @@ Use strict TypeScript.  Prefer `readonly` for props and return `Promise` types e
 
 Whenever you ask Copilot Chat to *generate* code in a `.ts` file, the above guidance rides along with your prompt.
 
+### Creating an instruction file via <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+
+1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (or <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on macOS) to open the **Command Palette**.
+2. Run **“Copilot Chat: Create Instruction File”** (you may need to type a few letters to filter).
+3. VS Code prompts for a file name and drops the new file into `.github/instructions/` with the `.instructions.md` suffix pre‑filled.
+4. Edit the YAML front‑matter and body, save, and commit the file—Copilot will start honouring it immediately.
+
 <!-- ********************* -->
+
 # Prompt files
+
 <!-- ********************* -->
 
 Prompt files create **slash‑command shortcuts**—for example `/olist` or `/ulist`.  Each file becomes one command.
@@ -58,6 +71,30 @@ mode: edit
 ---
 Convert the selected text (${selection}) into a Markdown ordered list.
 ```
+
+### Creating a prompt file via <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+
+1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and select **“Copilot Chat: Create Prompt File”**.
+2. Enter a descriptive file name such as `olist.prompt.md`; VS Code places it in `.github/prompts/`.
+3. Choose a `mode:` (`ask`, `edit`, or `agent`) and write the body of the prompt.
+4. Save the file—your new slash command `/olist` is now available in the chat input.
+
+### Invoking prompt commands inline with `/command`
+
+You can trigger a prompt without opening Copilot Chat:
+
+1. Select the code you want to transform in the editor.
+2. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and run **“Copilot Chat: Run Prompt”** (or simply type `/olist` then hit <kbd>Enter</kbd> in the chat pane).
+3. VS Code shows a quick‑pick list of all available prompts; choose the one you need.
+4. If the prompt’s `mode` is `edit`, a diff view appears so you can review and accept the change.
+
+#### Using the inline‑chat icon
+
+When you highlight code in VS Code, a small **Copilot swirl icon** (often shown as a magic‑wand) appears just above or next to the selection. Click that icon and an *inline chat* box opens right in the editor, automatically attaching the highlighted code as context.
+
+From this mini‑chat you can either type a natural‑language request or begin with `/` and pick any of your prompt commands (e.g., `/olist`, `/ulist`, `/fix‑types`). The prompt runs with `mode: edit`, showing an inline diff so you can accept or discard the change—exactly the same flow as steps 1‑4 above, but without leaving the file.
+
+**Built‑in quick‑action menu**  Immediately after clicking the icon you may see a small context menu with just two actions: **Rewrite** and **Review** (GitHub may introduce more in future updates). **Rewrite** suggests a refactor patch, while **Review** leaves inline comments on the selected code. If you dismiss the menu—for example by pressing <kbd>Escape</kbd>—the full inline chat opens so you can type a natural request or invoke your own `/olist`, `/ulist`, and other prompt‑file shortcuts.
 
 <!-- ********************* -->
 
@@ -89,7 +126,9 @@ Use just one mode per prompt file.
 | Affects token budget | Yes (always included)   | Only when invoked                   |
 
 <!-- ********************* -->
+
 # Worked examples
+
 <!-- ********************* -->
 
 ## Ordered vs unordered list prompts
@@ -155,7 +194,7 @@ No slash command needed—Copilot now follows these rules whenever it generates 
 
 * GitHub Docs – Repository custom instructions for Copilot
   [https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
-  How to create `.instructions.md` files and use `applyTo` globs.
+  Explains `.instructions.md` files and `applyTo` globs.
 
 * GitHub Docs – Prompt files with Copilot Chat
   [https://docs.github.com/en/copilot/customizing-copilot/using-prompt-files-with-github-copilot-chat](https://docs.github.com/en/copilot/customizing-copilot/using-prompt-files-with-github-copilot-chat)
@@ -169,7 +208,7 @@ No slash command needed—Copilot now follows these rules whenever it generates 
   [https://medium.com/@example/mastering-github-copilot-custom-instructions](https://medium.com/@example/mastering-github-copilot-custom-instructions)
   Step‑by‑step tutorial with TypeScript examples.
 
-* Microsoft DevBlogs – "Copilot Chat: The Life of a Prompt" (Mar 2025)
+* Microsoft DevBlogs – "Copilot Chat: The Life of a Prompt" (Mar 2025)
   [https://devblogs.microsoft.com/visualstudio/copilot-chat-life-of-a-prompt](https://devblogs.microsoft.com/visualstudio/copilot-chat-life-of-a-prompt)
   Explains how prompt context is built and token budgeting.
 
