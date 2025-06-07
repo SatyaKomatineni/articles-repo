@@ -1,5 +1,5 @@
 <!-- ********************* -->
-# Using / commands in GitHub Copilot, the long saga!
+# Using / commands for prompts in GitHub Copilot, the long saga!
 <!-- ********************* -->
 
 **Note:** This article was generated with the assistance of ChatGPT and may contain automated content. Please verify critical details.
