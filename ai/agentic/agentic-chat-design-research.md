@@ -456,6 +456,16 @@ More research is needed on my part.
 One possible approach is to have the stateless tool explicitly define the context parameters either as full history or summary.
 
 <!-- ********************* -->
+# Final Summary
+<!-- ********************* -->
+
+1. Chats have been so far understood to be using stateless tools or functions using a variety of schemes  including function calling, ReAct, etc.
+2. They are  increasingly calling Agents
+3. Very likely Google A2A like standards will formalize this
+4. While looking Github Copilot and how it interacts both as a Chat and an Agent, it is pointing to a number of directions. For instance its design of "Participants" may throw some light on how to use tools and agents in a practical manner as this implementation had been there for some time.
+5. Lot more research left. 
+
+<!-- ********************* -->
 # References
 <!-- ********************* -->
 
