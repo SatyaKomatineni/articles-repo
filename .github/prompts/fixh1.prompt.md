@@ -5,9 +5,11 @@ mode: agent
 
 Go through the file and edit it so that all heading comment sections are in the narrow format, like:
 
+```
 <!-- ********************* -->
 # Heading
 <!-- ********************* -->
+```
 
 This is called a heading comment section, and it should be formatted with the heading text immediately following the opening comment tag, without any empty lines in between. The closing comment tag should be on its own line after the heading text.
 
@@ -19,17 +21,20 @@ But do not alter any other lines outside of that heading comment section.
 
 For example, change this:
 
+```
 <!-- ********************* -->
 
 # Heading
 
 <!-- ********************* -->
+```
 
 to this:
-
+```
 <!-- ********************* -->
 # Heading
 <!-- ********************* -->
+```
 
 Make sure you apply this fix to all heading comment sections in the file, and ensure that the format is consistent throughout. Do not change any other content in the file, only focus on the heading comment sections.
 
