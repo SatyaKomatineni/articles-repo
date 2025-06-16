@@ -1,5 +1,6 @@
 <!-- ********************* -->
 # Using / commands for prompts in GitHub Copilot, the long saga!
+
 <!-- ********************* -->
 
 **Note:** This article was generated with the assistance of ChatGPT and may contain automated content. Please verify critical details.
@@ -23,7 +24,9 @@ This article shows the folders, file formats, example contents, and typical work
 7. References
 
 <!-- ********************* -->
+
 # Instruction files
+
 <!-- ********************* -->
 
 Instruction files are background rule sheets.  When present, their text is silently appended to every **code‑generation** request Copilot makes inside the workspace (or only for specific paths, if a glob is provided).
@@ -97,7 +100,9 @@ From this mini‑chat you can either type a natural‑language request or begin 
 **Built‑in quick‑action menu**  Immediately after clicking the icon you may see a small context menu with just two actions: **Rewrite** and **Review** (GitHub may introduce more in future updates). **Rewrite** suggests a refactor patch, while **Review** leaves inline comments on the selected code. If you dismiss the menu—for example by pressing <kbd>Escape</kbd>—the full inline chat opens so you can type a natural request or invoke your own `/olist`, `/ulist`, and other prompt‑file shortcuts.
 
 <!-- ********************* -->
+
 # Modes for prompt files
+
 <!-- ********************* -->
 
 | mode value        | Where it runs     | What you see                                              | Typical use‑case                                 |
