@@ -165,6 +165,25 @@ The `uv.lock` file is central to reproducible builds in a `uv`‑managed project
 2. Use `uv pip sync` (or simply `uv run`) in CI to install strictly from the lockfile.
 3. Regenerate the lockfile only when you intentionally upgrade dependencies.
 
+<!-- ********************* -->
+# Everyday UV Commands
+<!-- ********************* -->
+
+
+| Purpose                                     | Command                               | One-liner description                                                    |
+| ------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------ |
+| **Install `uv` globally (Windows)**         | `winget install --id=astral-sh.uv -e` | Installs the Rust binary so you can use `uv` anywhere.                   |
+| **Create a new project**                    | `uv init`                             | Generates a `pyproject.toml` in the current folder.                      |
+| **Create a virtual environment (optional)** | `uv venv`                             | Convenience wrapper for `python -m venv .venv`.                          |
+| **Add a package**                           | `uv pip install <pkg>`                | Installs `<pkg>`, updates `pyproject.toml`, and refreshes `uv.lock`.     |
+| **Remove a package**                        | `uv pip uninstall <pkg>`              | Uninstalls `<pkg>` and updates both TOML and lockfile.                   |
+| **Install all deps (latest compatible)**    | `uv pip install`                      | Reads `pyproject.toml`, resolves/installs, creates `uv.lock` if missing. |
+| **Reproduce exact env**                     | `uv pip sync`                         | Installs *exact* versions from `uv.lock`. Ideal for CI / fresh clones.   |
+| **List installed versions**                 | `uv pip freeze`                       | Prints resolved package versions (like `pip freeze`).                    |
+| **Regenerate lockfile after manual edits**  | `uv pip compile`                      | Resolves dependencies in `pyproject.toml` and rewrites `uv.lock`.        |
+| **Run a script in the project context**     | `uv run python script.py`             | Executes with the correct env; auto-installs if deps missing.            |
+| **Show help / all commands**                | `uv --help`                           | Displays the full CLI reference.                                         |
+
 
 <!-- ********************* -->
 # Conclusion
