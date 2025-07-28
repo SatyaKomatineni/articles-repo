@@ -1,5 +1,5 @@
 <!-- ******** -->
-# Spanish Verb Chains & Pronouns Cheat‑Sheet
+# Reflexive verbs in Spaish verb chains
 <!-- ******** -->
 <p align="right"><small>Author: Satya • Version: 1.0 • Date: 2025‑07‑28</small></p>
 
@@ -187,3 +187,43 @@ As they leave the house, the dog jumps happily because it **wants to accompany**
   * *Cocinar* → intransitive (*Hoy cocino*) or transitive (*Cocino pasta*).
   * *Leer* → transitive (*Leo el libro*) or ditransitive (*Le leo un cuento a mi hijo*).
 * **Reflexive pronouns** (*me, te, se…*) mark that the subject and object are the same entity and don’t count as separate objects (*Me lavo* = I wash myself).
+
+<!-- ******** -->
+## 10. Quick Rule: Match Subject & Reflexive Pronoun
+<!-- ******** -->
+
+> **Rule of thumb:** When you conjugate a reflexive verb, choose the reflexive pronoun that matches the subject—and remember the subject pronoun *(yo, tú, él…)* itself is optional.
+
+| Subject (optional) | Reflexive pronoun | Example with *lavarse* |
+|--------------------|-------------------|------------------------|
+| (yo)               | **me**            | *(Yo) **me lavo** las manos.* |
+| (tú)               | **te**            | *(Tú) **te lavas** la cara.* |
+| (él / ella / usted)| **se**            | *(Ella) **se lava** el pelo.* |
+| (nosotros/as)      | **nos**           | *(Nosotros) **nos lavamos**.* |
+| (vosotros/as)      | **os**            | *(Vosotros) **os laváis**.* |
+| (ellos / ellas / ustedes) | **se**     | *(Ellos) **se lavan** las manos.* |
+
+**Reminders**
+- You may drop the subject pronoun unless you need emphasis or clarity.
+- The reflexive pronoun either **precedes** the conjugated verb (*Me lavo*) or **attaches** to an infinitive/gerund/command (*Quiero lavarme*, *¡Lávate!*).
+
+<!-- ******** -->
+## 11. Rules of Thumb Summary
+<!-- ******** -->
+
+### Subject & Reflexive Pronoun
+1. When the subject performs an action **on itself**, add the matching reflexive pronoun **me, te, se, nos, os, se**.  
+2. The subject pronoun *(yo, tú, él…)* is optional, but the **reflexive pronoun is obligatory**.  
+3. Place the pronoun  
+   - **Before** the conjugated verb: *Me despierto.*  
+   - **Or attached** to an infinitive/gerund/affirmative command: *Quiero despertarme* / *¡Despiértate!*  
+
+### Two-Verb Chains & Object Pronouns
+1. In a chain **[conjugated verb] + [infinitive/gerund]**, any **direct, indirect, or reflexive pronoun** may go:  
+   - **Before** the conjugated verb, or  
+   - **Attached** to the infinitive/gerund.  
+2. Attaching often sounds smoother: *Voy a leerlo* / *Se van a lavar* → *Van a lavarse*.  
+3. If you attach **two** pronouns, add an accent to keep the stress: *explicártelo*, *mostrándoselos*.  
+4. **Order when both IO + DO pronouns appear:** the **indirect-object pronoun comes first**, followed by the **direct-object pronoun** → *me lo*, *te la*, *se los*, *nos las*, *os lo*, *se lo*.  
+   - *Quiero **explicártelo*** (IO = **te**, DO = **lo**).  
+   - *Ella **se los** va a dar* (IO = **se** for *le/les*, DO = **los*).
