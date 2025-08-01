@@ -9,25 +9,25 @@ This is crucial for maintaining project-specific dependencies and avoiding confl
 
 The standard name for a virtual environment is `venv`, and it is widely recommended for consistency. In this guide, we'll cover how to create, manage, and verify a virtual environment.
 
-1. [Setting up Python Virtual Environments (venv)](#setting-up-python-virtual-environments-venv)
-2. [What is a python Virtual Environment?](#what-is-a-python-virtual-environment)
-3. [Creating a Virtual Environment](#creating-a-virtual-environment)
-   1. [Activating the Virtual Environment](#activating-the-virtual-environment)
-   2. [Installing Packages in a Virtual Environment](#installing-packages-in-a-virtual-environment)
-4. [How to Check If You Are Running Inside a Virtual Environment](#how-to-check-if-you-are-running-inside-a-virtual-environment)
-   1. [Check the Terminal Prompt](#check-the-terminal-prompt)
-   2. [Use `which python` or `where python`](#use-which-python-or-where-python)
-   3. [Use `sys` in Python](#use-sys-in-python)
-   4. [Use the `VIRTUAL_ENV` Environment Variable](#use-the-virtual_env-environment-variable)
-5. [Deactivating and Deleting a Virtual Environment](#deactivating-and-deleting-a-virtual-environment)
-6. [Opening a Python Command Line in VS Code](#opening-a-python-command-line-in-vs-code)
-   1. [Using the Integrated Terminal](#using-the-integrated-terminal)
-   2. [Using the Python Interactive Window (Jupyter-like)](#using-the-python-interactive-window-jupyter-like)
-   3. [Most Common Names for Virtual Environments](#most-common-names-for-virtual-environments)
-7. [Can I switch to a virtual environment if I had already used the global environment for the project?](#can-i-switch-to-a-virtual-environment-if-i-had-already-used-the-global-environment-for-the-project)
-8. [Add venv to .gitgnore](#add-venv-to-gitgnore)
-9. [Conclusion](#conclusion)
-10. [Key References](#key-references)
+- [Setting up Python Virtual Environments (venv)](#setting-up-python-virtual-environments-venv)
+- [What is a python Virtual Environment?](#what-is-a-python-virtual-environment)
+- [Creating a Virtual Environment](#creating-a-virtual-environment)
+  - [Activating the Virtual Environment](#activating-the-virtual-environment)
+  - [Installing Packages in a Virtual Environment](#installing-packages-in-a-virtual-environment)
+- [How to Check If You Are Running Inside a Virtual Environment](#how-to-check-if-you-are-running-inside-a-virtual-environment)
+  - [Check the Terminal Prompt](#check-the-terminal-prompt)
+  - [Use `which python` or `where python`](#use-which-python-or-where-python)
+  - [Use `sys` in Python](#use-sys-in-python)
+  - [Use the `VIRTUAL_ENV` Environment Variable](#use-the-virtual_env-environment-variable)
+- [Deactivating and Deleting a Virtual Environment](#deactivating-and-deleting-a-virtual-environment)
+- [Opening a Python Command Line in VS Code](#opening-a-python-command-line-in-vs-code)
+  - [Using the Integrated Terminal](#using-the-integrated-terminal)
+  - [Using the Python Interactive Window (Jupyter-like)](#using-the-python-interactive-window-jupyter-like)
+  - [Most Common Names for Virtual Environments](#most-common-names-for-virtual-environments)
+- [Can I switch to a virtual environment if I had already used the global environment for the project?](#can-i-switch-to-a-virtual-environment-if-i-had-already-used-the-global-environment-for-the-project)
+- [Add venv to .gitgnore](#add-venv-to-gitgnore)
+- [Conclusion](#conclusion)
+- [Key References](#key-references)
 
 
 <!-- ********************* -->
@@ -41,7 +41,7 @@ Let's start with what is a python virtual environment.
 Let me first explain what is a python enviornment with a diagram.
 
 <div align="center">
-  <img src="images/python-global-env.png" width="400">
+  <img src="python-global-env.png" width="400">
 </div>
 
 Few take aways
@@ -56,7 +56,7 @@ Few take aways
 Let's contrast this with a virtual environment setup
 
 <div align="center">
-  <img src="images/python-virtual-environments.png" width="400">
+  <img src="python-virtual-environments.png" width="400">
 </div>
 
 Key takeaways, that will explain why the "Projet 3" is setup to use a virtual environment.
