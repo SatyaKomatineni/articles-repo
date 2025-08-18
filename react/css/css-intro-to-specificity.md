@@ -181,8 +181,8 @@ section:has(> h2) { padding-top: 1rem; }  /* 0,0,1,1 */
 <!-- ********************* -->
 
 * [MDN — CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity): Authoritative explanation of the specificity algorithm with examples and edge cases.
-* [MDN — `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ais): Defines matching semantics and the “most specific argument” specificity rule.
-* [MDN — `:where()`](https://developer.mozilla.org/en-US/docs/Web/CSS/%3Awhere): Explains zero‑specificity behavior and when to use it for safe scoping.
-* [MDN — `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/%3Anot): Shows that `:not()` takes the specificity of its argument.
-* [MDN — `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/%3Ahas): Specificity behavior and examples; includes notes on support and usage.
+* [MDN — `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is): Defines matching semantics and the “most specific argument” specificity rule.
+* [MDN — `:where()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:where): Explains zero‑specificity behavior and when to use it for safe scoping.
+* [MDN — `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not): Shows that `:not()` takes the specificity of its argument.
+* [MDN — `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has): Specificity behavior and examples; includes notes on support and usage.
 * [web.dev — Specificity](https://web.dev/learn/css/specificity): Practical overview with worked examples, including `:is()` vs. `:where()`.
