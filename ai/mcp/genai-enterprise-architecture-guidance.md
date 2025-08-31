@@ -13,7 +13,8 @@ These principles hope to achieve
 Note: This architecture is based on current trends in the industry. It may evolve, like all things. This is very much inline with how various popular GenAI vendors are approaching their enterprise offerings.
 
 **TL;DR:**
-There is an opportunity to dramatically increase the value of GenAI in Enterprises because of MCPs and horizontal GenAI UX tools
+
+**There is an opportunity to dramatically increase the value of GenAI in Enterprises because of MCPs and horizontal GenAI UX tools**
 
 # Principles
 
