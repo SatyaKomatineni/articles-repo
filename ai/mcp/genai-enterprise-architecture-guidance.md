@@ -19,15 +19,16 @@ Note: This architecture is based on current trends in the industry. It may evolv
 # Principles
 
 1. Maximally use horizontal GenAI tools to achieve business goals
-2. Spend efforts to enhance the horizontal tools for greater capabilities [Unsless you bought a vendor like Microsoft, OpenAI, or AWS]
-3. Some example horizontal tools are: Chats, MS Teams, Excel, SharePoint
-4. Use MCP servers to enhance the power of horizontal tools
-5. Use MCP Servers for both reads and writes
-6. Enhance the infrastructure to write and manage MCP servers
-7. Use Prompts and Agents (written in English) that run on MCP servers and exploited by the horizontal UX
-8. Enhance the infrastructure to write and manage Agents
-9. Finally solve your problems with: App -> Agents -> MCP Servers [Where the App often is horizontal and need not be coded.]
-10. Think: could you have solved this problem with MCPs, Horizontal UX, and Prompts (also called Agents)
+2. **The primary business goal is to expose enterprise APIs and data to LLMs.**
+3. Spend efforts to enhance the horizontal tools for greater capabilities [Unsless you bought a vendor like Microsoft, OpenAI, or AWS]
+4. Some example horizontal tools are: Chats, MS Teams, Excel, SharePoint
+5. Use MCP servers to enhance the power of horizontal tools
+6. Use MCP Servers for both reads and writes
+7. Enhance the infrastructure to write and manage MCP servers
+8. Use Prompts and Agents (written in English) that run on MCP servers and exploited by the horizontal UX
+9. Enhance the infrastructure to write and manage Agents
+10. Finally solve your problems with: App -> Agents -> MCP Servers [Where the App often is horizontal and need not be coded.]
+11. Think: could you have solved this problem with MCPs, Horizontal UX, and Prompts (also called Agents)
 
 # Where is the more valuable work in GenAI in the begining phases?
 
