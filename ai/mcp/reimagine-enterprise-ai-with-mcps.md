@@ -232,11 +232,49 @@ To treat and focus on "all values" the same, and spend energies and investments 
 You will navigate to vertical apps.
 
 <!-- ************************************************************ -->
-## How are the AI and Enterprise AI vendors approaching Enterprises?
+## Micro Soft: How are the AI and Enterprise AI vendors approaching Enterprises?
 <!-- ************************************************************ -->
 
-It is instructive to see how some key leaders in this space are seeing this architecture!
+It is instructive to see how some key leaders in this space are seeing the enterprise architecture!
 
+### Basics
+
+1. The Primary UXs are: Copilot chat, office, Teams
+2. There are default data sets that are fully exposed to this chat like onedrive, SP etc. Admins control what one can see or not, otherwise it is all
+3. When a user chats in the Work context, Copilot quietly grounds on Microsoft Graph (SharePoint Online, OneDrive, Exchange, Teams, etc.) plus any external content your admins have indexed via Copilot/Graph connectors—all filtered by that user’s permissions. There’s no per-chat “pick a connector” UI for end users.
+4. Agents get involved when externa content needs to be read or written to
+
+### Agent designs, connectors, MCPs
+
+1. Copilot studio is used to create agents
+2. Agents uses many MS internal APIs to write connectors
+3. OpenAPI (Swagger) is a key standard
+4. uses MCP recently when available
+5. MCPs are not directly exposed to chats
+6. They go through Agents
+7. Once defined and deployed by Copilot studio they are exposed to UXs
+8. There is NO SEPARATE UX for agents or MCPs
+9. You can only talk to 1 agent. But that can be an orchestrator that talks to other agents
+10. Agents can be long running
+11. Agents mostly in English
+12. Configured Custom UX through MS Teams Message Extensions (Via modal controls for input and custom cards for output)
+
+### Fabric Data Agent
+
+1. A special agent for lakehouse, tables, kql etc on fabric
+2. Created in a Fabric workspace, with sources selected from the OneLake catalog
+3. Limited to a set of tables and schemas selected
+4. Directly answers based on the schema based on structured data
+5. NL to SQL kind of a deal
+
+### Bottom line Enterprise architecture
+
+1. Horizontal UXs: Excel, Word, Teams, Chat
+2. Prebuilt RAG (Semantic indexing)
+3. Extensions through Agents
+4. Agents, at moment are heavily influenced by MS native connectors
+5. MCPs are exposed through Agents
+6. Chat is a bit weak: for example such concepts as Projects, Canvases, etc.
 
 <!-- ************************************************************ -->
 ## Strategic Advantages of the MCP + UX Architecture
