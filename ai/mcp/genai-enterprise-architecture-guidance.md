@@ -7,7 +7,7 @@ A set of principles for GenAI Architectures in an Enterprise.
 These principles hope to achieve
 
 1. Simpler architectures through horizontal UXs, MCP servers, and English Agents
-2. Get greater value from smaller efforts: An enterprise shell that allows one to script enterprise functions
+2. Get greater value from smaller efforts: **An enterprise AI command shell** that allows one to script enterprise functions
 3. Spend investments that enable 1 and 2
 
 Note: This architecture is based on current trends in the industry. It may evolve, like all things. This is very much inline with how various popular GenAI vendors are approaching their enterprise offerings.
