@@ -24,3 +24,21 @@
 # When to use classes in addition to functions
 
 1. if it is easier to understand code using classes do so.
+
+# On Comments
+
+1. Please use them
+2. At a minimum explain each function
+3. Keep them brief enough not to impact the readability of the code
+
+# On Typing (Useful. Ask for it once you are familiar with them and your readability is not clouded)
+
+1. Introduce types in code
+2. Yet keep the code readable
+3. When the types are obvious skip them
+
+# On names
+
+1. Keep the variable names meaningful but short enough
+2. Use industry standard naming such as mixed case etc
+3. Use industry standard "-" or "_" separators as needed
