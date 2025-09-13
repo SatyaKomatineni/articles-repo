@@ -30,6 +30,8 @@
 1. Please use them
 2. At a minimum explain each function
 3. Keep them brief enough not to impact the readability of the code
+4. Where meaningful, use block comments to describe the ideas better
+5. Use line separators like "*****************" to border the block comments
 
 # On Typing (Useful. Ask for it once you are familiar with them and your readability is not clouded)
 
