@@ -272,6 +272,9 @@ This design allows you to choose between **writing code** and **issuing direct c
 * [jq JSON Processor](https://stedolan.github.io/jq/)
   Tool for formatting and filtering JSON output in terminal.
 
+* [Using uv for tool installs](https://github.com/SatyaKomatineni/articles-repo/blob/master/python/uv/using-uv-for-tool-installations.md)
+  My document on understanding uv for tool installs in general to supplement OpenAI CLI installation, in case if I run into issues and have to debug
+
 * [uv Documentation](https://docs.astral.sh/uv/)
   Official documentation for uv tool and package management.
 
