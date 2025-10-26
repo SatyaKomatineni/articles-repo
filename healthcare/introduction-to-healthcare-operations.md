@@ -451,3 +451,8 @@ The success of provider operations depends on integration across vendors, regula
 
 * [Office of the National Coordinator for Health Information Technology (ONC)](https://www.healthit.gov/)
   Government resources on interoperability, FHIR APIs, and patient-access rules.
+
+* [Silicon Vally Bank (svb) Future of Healthtech 2025. A PDF](https://www.svb.com/globalassets/trendsandinsights/reports/healthcare/2025/future-of-healthtech-2025-v2.pdf)
+
+* [Silicon Vally Bank (svb) Future of Healthtech 2025. Web](https://www.svb.com/trends-insights/reports/healthtech-trends-report/)
+  Role of AI healthtech investment.
