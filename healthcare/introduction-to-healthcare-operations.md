@@ -28,19 +28,26 @@ This article provides an overview of *provider operations* in Healthcare IT — 
 * Summary
 * References
 
----
+<!-- ************************************************************ -->
+# Motivation
+<!-- ************************************************************ -->
+In 2025 with GenAI, there has been a sentiment that the investment is moving to companies using GenAI for Provider operations. 
 
-# <!-- ************************************************************ -->
+This article is to quickly understand what constitutes provider operations.
+
+A quick survey of provider operations.
+
+<!-- ************************************************************ -->
 # Introduction
-# <!-- ************************************************************ -->
+<!-- ************************************************************ -->
 
 In Healthcare IT, **provider operations** refer to the systems, workflows, and digital tools that enable healthcare providers—such as hospitals, clinics, and physician groups—to deliver patient care efficiently. These operations bridge the clinical and administrative worlds, ensuring that healthcare delivery remains effective, compliant, and financially sustainable.
 
 ---
 
-# <!-- ************************************************************ -->
+<!-- ************************************************************ -->
 # Core Functions of Provider Operations
-# <!-- ************************************************************ -->
+<!-- ************************************************************ -->
 
 Provider operations encompass the full lifecycle of clinical and administrative workflows that occur within a healthcare organization. The major components include:
 
