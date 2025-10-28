@@ -36,6 +36,7 @@ In healthcare, **Clinical Decision Support (CDS)** tools assist clinicians by su
 
 With the rise of **Generative AI (GenAI)** and large language models (LLMs), CDS is undergoing a transformation. **GenAI CDS** tools use contextual understanding and natural language reasoning to provide real-time assistance, summarizing patient data, suggesting next steps, and even generating documentation. These systems turn static alerts into conversational, context-aware assistants that adapt to each patient and provider.
 
+My Add: **The primary difference I see is, a clinician is not bound by what is returned or suggested with GenAI! They can reformat the ask, and many times if needed, so that what is gathered is inspired by the "clinician"!**
 ---
 
 <!-- ************************************************************ -->
