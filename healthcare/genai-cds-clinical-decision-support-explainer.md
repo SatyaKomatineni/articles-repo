@@ -22,6 +22,7 @@ This article explains **Generative AI Clinical Decision Support (GenAI CDS)** â€
 * Example: A Specialist Using CDS in Practice
 * Physicianâ€“AI Interaction and User Experience Trends
 * Example: How a physician may use GenAI for differentiated diagnosis
+* A list of new companies in this space
 * Future Outlook
 * References
 
