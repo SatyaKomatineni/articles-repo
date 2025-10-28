@@ -6,7 +6,7 @@
 
 10/28/2025/Satya Komatineni
 
-This article explains **Generative AI Clinical Decision Support (GenAI CDS)** — what it is, how it differs from traditional CDS, and how it is transforming the way clinicians make decisions and interact with technology. It explores architecture, physician experience, real-world use cases, and future opportunities.
+This article explains **Generative AI Clinical Decision Support (GenAI CDS)** — what it is, how it enhances traditional CDS, and how it "could" transform the way clinicians make decisions and interact with technology. It explores architecture, physician experience, real-world use cases, and future opportunities.
 
 ---
 
