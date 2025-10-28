@@ -1,4 +1,6 @@
+<!-- ************************************************************ -->
 # GenAI CDS: An Explainer and Opportunities
+<!-- ************************************************************ -->
 
 **Note:** This article was generated with the assistance of ChatGPT and may contain automated content. Please verify critical details.
 
@@ -19,12 +21,15 @@ This article explains **Generative AI Clinical Decision Support (GenAI CDS)** �
 * Example: A Physician Using CDS in Practice
 * Example: A Specialist Using CDS in Practice
 * Physician–AI Interaction and User Experience Trends
+* Example: How a physician may use GenAI for differentiated diagnosis
 * Future Outlook
 * References
 
 ---
 
+<!-- ************************************************************ -->
 # Introduction
+<!-- ************************************************************ -->
 
 In healthcare, **Clinical Decision Support (CDS)** tools assist clinicians by surfacing key information and evidence-based recommendations during patient care. Traditional CDS systems were rule-based — they followed predetermined logic built around guidelines or alerts.
 
@@ -32,7 +37,9 @@ With the rise of **Generative AI (GenAI)** and large language models (LLMs), CDS
 
 ---
 
+<!-- ************************************************************ -->
 # Traditional CDS: A Quick Refresher
+<!-- ************************************************************ -->
 
 Conventional CDS systems function as embedded engines within Electronic Health Record (EHR) platforms. They:
 
@@ -46,7 +53,9 @@ While valuable, traditional CDS can be improved upon by understanding the contex
 
 ---
 
+<!-- ************************************************************ -->
 # What Makes CDS “GenAI”
+<!-- ************************************************************ -->
 
 **GenAI CDS** moves beyond rules to reason dynamically using data and language models. It can:
 
@@ -60,7 +69,9 @@ GenAI CDS collaborates through natural dialogue — inside EHRs, mobile apps, or
 
 ---
 
+<!-- ************************************************************ -->
 # Architecture of GenAI CDS Systems
+<!-- ************************************************************ -->
 
 Modern GenAI CDS pipelines combine multiple layers:
 
@@ -72,7 +83,9 @@ Modern GenAI CDS pipelines combine multiple layers:
 
 ---
 
+<!-- ************************************************************ -->
 # Benefits and Opportunities
+<!-- ************************************************************ -->
 
 * **Efficiency** – Automates repetitive documentation, chart review, and summarization, allowing physicians to spend more time with patients. GenAI CDS tools extract key data points, prefill sections of clinical notes, and surface relevant patient history before each encounter.
 * **Quality of Care** – Context-aware reasoning identifies gaps in care, flags risk trends, and suggests next steps based on current clinical guidelines and similar case outcomes. It can also cross-check treatment plans against contraindications or new evidence.
@@ -82,7 +95,9 @@ Modern GenAI CDS pipelines combine multiple layers:
 
 ---
 
+<!-- ************************************************************ -->
 # Challenges and Considerations
+<!-- ************************************************************ -->
 
 * **Maturity of GenAI Interactions: ** How to integrate via voice, ux, and other modalities to seamlessly act as an agent for the Physician. There is lot of pending engineering for this to be a seamless fruitful experience.
 * **Validation and Safety:** Outputs must be verifiable and evidence-based.
@@ -93,7 +108,9 @@ Modern GenAI CDS pipelines combine multiple layers:
 
 ---
 
+<!-- ************************************************************ -->
 # Example: A Physician Using CDS in Practice
+<!-- ************************************************************ -->
 
 **Scenario: Primary Care Physician** managing a diabetic patient with hypertension.
 
@@ -114,7 +131,9 @@ Streamlined documentation, in-context decision support, safer prescribing, and i
 
 ---
 
+<!-- ************************************************************ -->
 # Example: A Specialist Using CDS in Practice
+<!-- ************************************************************ -->
 
 **Scenario: Cardiologist** treating a patient with prior stent placement.
 
@@ -133,7 +152,9 @@ EHR (Epic, Cerner, Allscripts) • GenAI Copilot Interface (Nuance/Nabla) • Cl
 **Result:**
 A seamlessly integrated workflow where the specialist receives real-time evidence-based guidance, eliminates manual documentation, and ensures patient follow-up tasks are automatically scheduled and communicated.---
 
+<!-- ************************************************************ -->
 # Using GenAI for Difficult Diagnoses
+<!-- ************************************************************ -->
 
 When a diagnosis is unclear, physicians face information overload, conflicting data, and limited time. GenAI CDS systems can serve as intelligent partners that synthesize possibilities and highlight patterns otherwise hidden in the data.
 
@@ -160,7 +181,9 @@ GenAI assists in reasoning under uncertainty—organizing evidence, connecting s
 
 ---
 
+<!-- ************************************************************ -->
 # Physician–AI Interaction and User Experience Trends
+<!-- ************************************************************ -->
 
 Physicians engage with GenAI CDS across several modalities:
 
@@ -178,7 +201,9 @@ Physicians engage with GenAI CDS across several modalities:
 
 ---
 
+<!-- ************************************************************ -->
 # The 'Unknowns' Where GenAI Excels
+<!-- ************************************************************ -->
 
 While much of traditional CDS can operate through static rules, **Generative AI** demonstrates unique value in ambiguous or data‑scarce scenarios — the “unknowns” of clinical reasoning where predefined logic falls short.
 
@@ -201,7 +226,9 @@ These domains of uncertainty — incomplete data, rare cases, conflicting eviden
 
 ---
 
+<!-- ************************************************************ -->
 # Innovative Companies Using GenAI in Differentiated Ways
+<!-- ************************************************************ -->
 
 A growing number of healthcare technology firms are taking distinctive approaches to **GenAI‑driven CDS** beyond documentation and summarization.
 
@@ -218,7 +245,9 @@ These innovators demonstrate the breadth of GenAI CDS applications—from clinic
 
 ---
 
+<!-- ************************************************************ -->
 # Future Outlook
+<!-- ************************************************************ -->
 
 GenAI CDS is evolving into an intelligent, federated ecosystem. In the near future:
 
@@ -230,7 +259,9 @@ GenAI CDS is evolving into an intelligent, federated ecosystem. In the near futu
 
 ---
 
+<!-- ************************************************************ -->
 # References
+<!-- ************************************************************ -->
 
 * [Epic Systems](https://www.epic.com/) – GenAI‑enabled CDS and Microsoft Copilot integration.
 * [Google Health](https://health.google/) – Med‑PaLM 2 and healthcare reasoning models.
