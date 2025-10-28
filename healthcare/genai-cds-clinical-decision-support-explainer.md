@@ -233,12 +233,19 @@ These domains of uncertainty — incomplete data, rare cases, conflicting eviden
 A growing number of healthcare technology firms are taking distinctive approaches to **GenAI‑driven CDS** beyond documentation and summarization.
 
 **1. Hippocratic AI** – Developing safety‑tuned healthcare LLMs for clinical communication and decision support that prioritize factual accuracy and empathy.
+
 **2. Atropos Health** – Uses GenAI to generate evidence summaries from real‑world data, allowing clinicians to query outcomes for patients “like mine.”
+
 **3. Nabla** – Focused on ambient clinical copilots with conversational UX for physicians, enabling real‑time reasoning and summarization within telehealth encounters.
+
 **4. 3M M*Modal** – Combining generative transcription with contextual CDS prompts that recommend actions while notes are being created.
+
 **5. Regard AI** – Integrates GenAI CDS directly into EHRs to detect overlooked diagnoses and flag missing documentation.
+
 **6. Tempus AI** – Applies generative models to oncology and genomics data, assisting specialists with evidence‑based treatment pathways.
+
 **7. Glass Health** – Offers AI‑aided differential diagnosis generation and medical note drafting for clinicians in training and practice.
+
 **8. Ambience Healthcare** – Builds real‑time, multimodal clinical copilots that blend voice, chat, and CDS capabilities at the point of care.
 
 These innovators demonstrate the breadth of GenAI CDS applications—from clinical reasoning and precision oncology to empathetic conversational assistants—showing that the technology’s potential extends well beyond note automation.
