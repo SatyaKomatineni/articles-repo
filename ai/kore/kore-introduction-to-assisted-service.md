@@ -1,7 +1,6 @@
+
 <!-- ********************* -->
-
 # Kore.ai Conversational Architecture in an Assisted Service Scenario
-
 <!-- ********************* -->
 
 **Note:** This article was generated with the assistance of ChatGPT and may contain automated content. Please verify critical details.
@@ -22,20 +21,18 @@ This document explains how **Kore.ai** functions in a typical **assisted-service
 
 ---
 
+
 <!-- ********************* -->
-
 # Overview
-
 <!-- ********************* -->
 
 In a modern omnichannel contact center, **Kore.ai** acts as the *intelligent conversation fabric* that connects the **self-service layer** (virtual agents) with the **assisted-service layer** (human agents). It orchestrates context, intent, and automation between user interfaces (chat or IVR), human consoles (agent desktops), and enterprise systems (CRM, ERP, ticketing).
 
 ---
 
+
 <!-- ********************* -->
-
 # Step-by-Step Conversation Flow
-
 <!-- ********************* -->
 
 | **Stage**                               | **What Happens**                                              | **Kore.ai Role**                                                                                                 |
@@ -50,10 +47,9 @@ In a modern omnichannel contact center, **Kore.ai** acts as the *intelligent con
 
 ---
 
+
 <!-- ********************* -->
-
 # Active Modules in Kore.ai
-
 <!-- ********************* -->
 
 | **Layer**            | **Active Components**                | **Purpose**                                                            |
@@ -67,10 +63,9 @@ In a modern omnichannel contact center, **Kore.ai** acts as the *intelligent con
 
 ---
 
+
 <!-- ********************* -->
-
 # Responsibilities Split: Kore.ai vs External Systems
-
 <!-- ********************* -->
 
 | **Function**             | **Kore.ai**                              | **External System (CRM / CCaaS)** |
@@ -85,10 +80,9 @@ In a modern omnichannel contact center, **Kore.ai** acts as the *intelligent con
 
 ---
 
+
 <!-- ********************* -->
-
 # Essential Architectural Summary
-
 <!-- ********************* -->
 
 In an assisted-service interaction, **Kore.ai orchestrates the conversation fabric**, ensuring that context from self-service is preserved, enriched, and transferred to a human agent without loss of information.
@@ -116,10 +110,9 @@ In an assisted-service interaction, **Kore.ai orchestrates the conversation fabr
 
 <!-- ********************* -->
 
+
 <!-- ********************* -->
-
 # Phone Call with Agent + Agent-Chat Assist (Kore.ai) — Step-by-Step
-
 <!-- ********************* -->
 
 This section describes the flow when the **customer is on a phone call** (voice) with a human agent, and the **agent has a Kore.ai chat/assist panel** available inside their desktop (Kore.ai Agent Desktop or embedded in a CRM/CCaaS console). The chat is **not customer-facing**; it is an **agent-side assist and side‑chat to the bot**, used for guidance, knowledge, and automations during the call.
@@ -142,10 +135,9 @@ This section describes the flow when the **customer is on a phone call** (voice)
 * Kore.ai can be embedded in CRMs (Salesforce, Zendesk) or CCaaS consoles (Genesys, Amazon Connect, NICE) and works with their transcription feeds.
 * All actions initiated from the agent panel can require **explicit agent confirmation** before committing changes to systems of record.
 
+
 <!-- ********************* -->
-
 # References
-
 <!-- ********************* -->
 
 * [Kore.ai Contact Center AI Overview](https://kore.ai/platform/contact-center-ai/) — Updated overview of Kore.ai’s contact center automation, self-service, and routing architecture.
