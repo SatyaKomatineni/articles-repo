@@ -1,7 +1,5 @@
 <!-- ********************* -->
-
 # Kore.ai Terminology and Key Concepts
-
 <!-- ********************* -->
 
 **Note:** This glossary was generated with the assistance of ChatGPT and summarizes common and Kore.ai-specific terms found across official documentation. Please verify definitions against the latest [Kore.ai Docs](https://docs.kore.ai/).
@@ -11,9 +9,7 @@ This document provides a structured list of the **most important terminology** a
 ---
 
 <!-- ********************* -->
-
 # Core Conversational AI Concepts
-
 <!-- ********************* -->
 
 | **Term**                                 | **Definition / Description**                                                                                                | **Why It Matters**                                                   |
@@ -32,9 +28,7 @@ This document provides a structured list of the **most important terminology** a
 ---
 
 <!-- ********************* -->
-
 # Kore.ai Platform Modules and Offerings
-
 <!-- ********************* -->
 
 | **Module / Product**        | **Purpose**                                                                                                        | **Key Capabilities**                                                                      |
@@ -52,9 +46,7 @@ This document provides a structured list of the **most important terminology** a
 ---
 
 <!-- ********************* -->
-
 # Difference Between Agent Assist and Agent Desktop
-
 <!-- ********************* -->
 
 **Agent Assist (Agent AI)** and **Agent Desktop** are complementary modules within Kore.ai’s contact center stack. The **Agent Assist** component provides real-time intelligence and automation, while the **Agent Desktop** serves as the operational workspace for agents handling customer interactions.
@@ -71,9 +63,7 @@ This document provides a structured list of the **most important terminology** a
 **Summary:** *Agent Assist* is the **AI-driven guidance layer**, while *Agent Desktop* is the **agent’s working environment**. When combined, they form an intelligent agent experience—AI listens, guides, and automates, while the desktop delivers the workspace and communication tools.
 
 <!-- ********************* -->
-
 # Can Agent Assist Exist Without Agent Desktop?
-
 <!-- ********************* -->
 
 Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Agent Desktop**. While both are complementary, they are not mutually dependent.
@@ -105,9 +95,7 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 **Summary:** *Agent Assist* can operate as a **standalone AI layer** within other agent systems, or as an **integrated feature inside Kore.ai’s own Agent Desktop**. Agents do not always have the Kore.ai desktop, but they can always leverage Kore.ai’s cognitive assistance wherever they work.
 
 <!-- ********************* -->
-
 # Understanding CCaaS (Contact Center as a Service)
-
 <!-- ********************* -->
 
 **CCaaS (Contact Center as a Service)** is a cloud-based model that delivers contact center functionality — including voice, chat, email, routing, analytics, and workforce management — through subscription-based or hosted platforms. Kore.ai integrates deeply with CCaaS systems to extend them with conversational AI and automation.
@@ -144,8 +132,10 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 
 ---
 
-# Understanding Transcription in Kore.ai
+---
 
+<!-- ********************* -->
+# Understanding Transcription in Kore.ai
 <!-- ********************* -->
 
 **Transcription** in Kore.ai refers to the automated process of converting **spoken language (voice calls or IVR interactions)** into text in real time or post-call. It serves as a critical bridge between **voice channels** and **AI-driven understanding**.
@@ -171,9 +161,10 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 * Reduces manual documentation through automatic call summaries.
 
 ---
+---
 
+<!-- ********************* -->
 # Understanding Next Best Action (NBA) in Kore.ai
-
 <!-- ********************* -->
 
 **Next Best Action (NBA)** in Kore.ai refers to the system’s ability to **recommend the most contextually relevant action, message, or workflow** to either a user or an agent during an interaction.
@@ -198,9 +189,10 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 * Ensures consistent handling of complex or regulated scenarios.
 
 ---
+---
 
+<!-- ********************* -->
 # Understanding SmartAssist in Kore.ai
-
 <!-- ********************* -->
 
 **SmartAssist** is Kore.ai’s pre-packaged contact center solution that combines conversational AI, automation, and agent assist capabilities into a single ready-to-deploy platform. It is designed to accelerate deployment for enterprises that want a complete AI-powered contact center without building each module from scratch.
@@ -229,9 +221,10 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 * Allows organizations to leverage Kore.ai’s **full AI stack** (NLU, Knowledge AI, Quality AI, and Voice Gateway) in one cohesive solution.
 
 ---
+---
 
+<!-- ********************* -->
 # Is SmartAssist Optional or a Simpler Development Platform?
-
 <!-- ********************* -->
 
 **SmartAssist** is *not* a replacement for the XO Platform, nor is it merely a simpler development tool. Instead, it’s an **optional, pre-packaged layer built on top of the XO Platform** that simplifies contact center deployment.
@@ -250,9 +243,10 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 > SmartAssist is **optional**. It is best viewed as a **turnkey contact center product** built using the XO Platform. Organizations can either use SmartAssist for faster implementation or directly develop within the XO Platform for maximum flexibility.
 
 ---
+---
 
+<!-- ********************* -->
 # Understanding BotKit SDK in Kore.ai
-
 <!-- ********************* -->
 
 The **BotKit SDK** is Kore.ai’s developer toolkit that enables advanced customization, integration, and extension of bots built on the XO Platform. It provides **server-side APIs and libraries** that developers can use to handle business logic, third-party integrations, and event-driven interactions outside the visual builder.
@@ -287,9 +281,10 @@ The **BotKit SDK** is Kore.ai’s developer toolkit that enables advanced custom
 * Bridges the gap between conversational design and enterprise-grade application logic.
 
 ---
+---
 
+<!-- ********************* -->
 # How BotKit SDK Differs from XO Platform
-
 <!-- ********************* -->
 
 While both the **XO Platform** and **BotKit SDK** are developer tools within Kore.ai’s ecosystem, they serve different purposes and complement each other.
@@ -313,9 +308,10 @@ While both the **XO Platform** and **BotKit SDK** are developer tools within Kor
 * Most enterprises use both together: XO for design and management, BotKit SDK for backend intelligence and integrations.
 
 ---
+---
 
+<!-- ********************* -->
 # Understanding AI for Work in Kore.ai
-
 <!-- ********************* -->
 
 **AI for Work** is Kore.ai’s suite of enterprise productivity solutions that apply conversational and generative AI across everyday workplace tools and business workflows. It extends the capabilities of the XO Platform beyond customer service and contact centers, embedding intelligence into enterprise operations.
@@ -350,9 +346,10 @@ AI for Work helps employees automate tasks, retrieve knowledge, and perform acti
 > **In essence:** *AI for Work* merges Kore.ai’s conversational AI framework with internal automation and collaboration tools, turning every employee interaction into an intelligent, natural-language experience.
 
 ---
+---
 
+<!-- ********************* -->
 # Supporting Components and Architecture Terms
-
 <!-- ********************* -->
 
 | **Term**                        | **Definition / Role**                                                                                    |
@@ -371,9 +368,7 @@ AI for Work helps employees automate tasks, retrieve knowledge, and perform acti
 ---
 
 <!-- ********************* -->
-
 # References
-
 <!-- ********************* -->
 
 * [Kore.ai Platform Overview](https://kore.ai/platform/) — Official product overview and module list.
@@ -383,5 +378,6 @@ AI for Work helps employees automate tasks, retrieve knowledge, and perform acti
 * [Kore.ai Knowledge AI](https://kore.ai/platform/knowledge-ai/) — Knowledge management and retrieval module description.
 * [Kore.ai Voice Gateway](https://kore.ai/platform/voice-gateway/) — IVR and telephony integration capabilities.
 * [Kore.ai Quality AI](https://kore.ai/platform/quality-ai/) — Conversation analytics, scoring, and insights.
+* [Kore.ai in pictures. My blog](https://www.satyakomatineni.com/akc/item/5813) - I wanted to get pictorial views of Kore.ai architecture.
 
 *Link validation date: November 2, 2025.*
