@@ -68,7 +68,9 @@ This document provides a structured list of the **most important terminology** a
 
 Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Agent Desktop**. While both are complementary, they are not mutually dependent.
 
+<!-- ********************* -->
 ### ✅ When Agent Assist Runs Without Agent Desktop
+<!-- ********************* -->
 
 * Agent Assist can be **embedded inside third‑party CRMs or CCaaS systems** such as Salesforce, Zendesk, Genesys Cloud, or NICE.
 * In these scenarios, agents continue using their **native desktop or console**, but Kore.ai’s **AI‑assist panel** appears as an embedded widget or sidebar.
@@ -79,12 +81,16 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
   * Generation of summaries and automated CRM field updates.
 * Kore.ai interacts with external platforms through **API connectors and SDKs** to feed insights and actions directly into the agent’s interface.
 
+<!-- ********************* -->
 ### ⚙️ When Agent Desktop Is Included
+<!-- ********************* -->
 
 * Enterprises that **adopt Kore.ai as a full contact‑center solution** can enable the native **Agent Desktop** module.
 * In this case, the Agent Desktop becomes the **primary workspace**, and **Agent Assist** is **built‑in**, offering unified functionality for chat, voice, and social channels.
 
+<!-- ********************* -->
 ### 🔍 Key Takeaways
+<!-- ********************* -->
 
 | **Scenario**                                               | **Agent Assist Availability**   | **Agent Desktop Presence** |
 | ---------------------------------------------------------- | ------------------------------- | -------------------------- |
@@ -100,7 +106,9 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 
 **CCaaS (Contact Center as a Service)** is a cloud-based model that delivers contact center functionality — including voice, chat, email, routing, analytics, and workforce management — through subscription-based or hosted platforms. Kore.ai integrates deeply with CCaaS systems to extend them with conversational AI and automation.
 
+<!-- ********************* -->
 ### 🧩 What CCaaS Provides
+<!-- ********************* -->
 
 * **Core Contact Handling**: Manages inbound and outbound calls, chat, and digital interactions.
 * **Routing & Queues**: Skill-based routing, queue assignment, and escalation flows.
@@ -108,7 +116,9 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 * **Reporting & Analytics**: Metrics such as AHT (Average Handle Time), FCR (First Contact Resolution), and CSAT (Customer Satisfaction).
 * **CRM Integration**: Seamless handoff of customer data and tickets between front-line interactions and back-end systems.
 
+<!-- ********************* -->
 ### ⚙️ How Kore.ai Integrates with CCaaS
+<!-- ********************* -->
 
 | **Integration Point**          | **Kore.ai Role**                                                                                       |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
@@ -118,7 +128,9 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 | **Post-Interaction Summaries** | Auto-generates summaries, sentiment scores, and compliance notes for the CCaaS system.                 |
 | **Knowledge Integration**      | Exposes enterprise KBs and RAG-based answers directly within CCaaS agent consoles.                     |
 
+<!-- ********************* -->
 ### 💡 Examples of CCaaS Platforms Supported by Kore.ai
+<!-- ********************* -->
 
 * **Genesys Cloud CX** — integrated bot connector and routing handoff.
 * **Amazon Connect** — telephony and transcription integration via Voice Gateway.
@@ -126,7 +138,9 @@ Kore.ai allows **Agent Assist (Agent AI)** to operate **independently of the Age
 * **Cisco Webex Contact Center** — integration for chat and voice automation.
 * **Five9** — integration for both self-service and assisted-service workflows.
 
+<!-- ********************* -->
 ### 🧠 Summary
+<!-- ********************* -->
 
 > CCaaS provides the **operational foundation** for contact handling and routing, while Kore.ai adds the **intelligence layer** — delivering automation, contextual understanding, and AI-driven guidance across the same ecosystem.
 
